@@ -88,7 +88,8 @@ same day. Not confirmed, so no copy may state it as fact.
 |---|---|
 | This plan | ✅ written |
 | Haryana free GK mock | ✅ live (noindex) |
-| `hssc` / `hpsc` bodies and exam pages | not started |
+| Exams listed (HSSC CET, Haryana Police Constable, HPSC HCS, HTET, SVSU Assistant/Steno-typist) with exam pages | ✅ in code (11 Nov 2026), needs `db:seed` |
+| Free mock for Haryana Police Constable, HPSC HCS, HTET and SVSU (`prisma/hr-exams`; the CET free mock is in `prisma/hr-cet/mocks.ts`; products hidden) | ✅ in code, needs `db:seed`. Section splits and marking are ours, to confirm against each notice |
 | Haryana GK bank | not started |
 | CET series (free + 6 mocks + sectionals) | in progress: free mock + paid mocks 1–2 (`prisma/hr-cet/mocks.ts`, 300 Qs, Haryana GK new, other sections reused from the HP/Punjab banks) and 4 Haryana GK sectionals done; paid mocks 3–6 and 11 other sectionals to go |
 | Police series | not started |

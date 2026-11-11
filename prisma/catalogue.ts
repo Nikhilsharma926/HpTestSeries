@@ -222,6 +222,46 @@ export const catalogue: BodySeed[] = [
     sites: ["hr"],
     exams: [{ slug: "cet-group-c", name: "HSSC CET Group C", nameHi: "एचएसएससी सीईटी ग्रुप सी" }],
   },
+  {
+    slug: "haryana-police",
+    name: "Haryana Police",
+    nameHi: "हरियाणा पुलिस",
+    sites: ["hr"],
+    exams: [{ slug: "constable", name: "Haryana Police Constable", nameHi: "हरियाणा पुलिस कांस्टेबल" }],
+  },
+  {
+    slug: "hpsc",
+    name: "Haryana Public Service Commission",
+    nameHi: "हरियाणा लोक सेवा आयोग",
+    sites: ["hr"],
+    exams: [
+      {
+        slug: "hcs",
+        name: "HCS Combined Competitive Exam",
+        nameHi: "एचसीएस संयुक्त प्रतियोगी परीक्षा",
+        stages: [
+          { slug: "prelims", name: "Prelims", nameHi: "प्रारंभिक" },
+          { slug: "mains", name: "Mains", nameHi: "मुख्य" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "bseh",
+    name: "Board of School Education Haryana",
+    nameHi: "हरियाणा विद्यालय शिक्षा बोर्ड",
+    sites: ["hr"],
+    exams: [{ slug: "htet", name: "HTET", nameHi: "एचटेट" }],
+  },
+  {
+    // Shri Vishwakarma Skill University, Dudhola (Palwal): its 2026 non-teaching notice is the one MCQ-style written test on the
+    // FreeJobAlert Haryana page; the other entries there are research, walk-in, deputation or skill-test recruitments.
+    slug: "svsu",
+    name: "Shri Vishwakarma Skill University",
+    nameHi: "श्री विश्वकर्मा कौशल विश्वविद्यालय",
+    sites: ["hr"],
+    exams: [{ slug: "assistant-steno-typist", name: "SVSU Assistant & Steno-typist", nameHi: "एसवीएसयू असिस्टेंट एवं स्टेनो-टाइपिस्ट" }],
+  },
   // Rajasthan (rjtestseries.in only). Exam names carry the body so they stay unique in the /tests filter.
   {
     slug: "rssb",
