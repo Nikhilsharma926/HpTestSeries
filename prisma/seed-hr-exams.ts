@@ -49,6 +49,24 @@ const CONFIGS: Cfg[] = [
     description: "Mocks for the SVSU Assistant and Steno-typist written test: General Awareness, Reasoning, Maths, English and Computer.",
     tests: HR_EXAM_TESTS.svsu,
   },
+  {
+    key: "hartron-deo",
+    bodySlug: "hartron",
+    examSlug: "data-entry-operator",
+    name: "HARTRON Data Entry Operator",
+    nameHi: "हार्ट्रोन डेटा एंट्री ऑपरेटर",
+    description: "Mocks for the HARTRON Data Entry Operator written test: reasoning, maths, English and computer.",
+    tests: HR_EXAM_TESTS.hartron,
+  },
+  {
+    key: "haryana-court-steno",
+    bodySlug: "haryana-district-courts",
+    examSlug: "stenographer-grade-3",
+    name: "Haryana Court Stenographer Grade III",
+    nameHi: "हरियाणा कोर्ट स्टेनोग्राफर ग्रेड III",
+    description: "Mocks for the English, computer and general-awareness knowledge behind the Haryana District Court Stenographer Grade III skill tests.",
+    tests: HR_EXAM_TESTS.courtSteno,
+  },
 ];
 
 export async function seedHrExams(db: PrismaClient) {

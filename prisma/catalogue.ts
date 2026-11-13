@@ -71,6 +71,8 @@ export const catalogue: BodySeed[] = [
       { slug: "radiographer", name: "Radiographer", nameHi: "रेडियोग्राफर" },
       { slug: "panchayat-secretary", name: "Panchayat Secretary", nameHi: "पंचायत सचिव" },
       { slug: "lab-assistant", name: "Lab Assistant", nameHi: "लैब असिस्टेंट" },
+      { slug: "physical-education-teacher", name: "Physical Education Teacher", nameHi: "शारीरिक शिक्षा शिक्षक" },
+      { slug: "computer-teacher", name: "Computer Teacher", nameHi: "कंप्यूटर शिक्षक" },
     ],
   },
   {
@@ -179,7 +181,17 @@ export const catalogue: BodySeed[] = [
       { slug: "group-d", name: "PSSSB Group D", nameHi: "पीएसएसएसबी ग्रुप डी" },
       { slug: "junior-engineer", name: "PSSSB Junior Engineer", nameHi: "पीएसएसएसबी जूनियर इंजीनियर" },
       { slug: "patwari", name: "PSSSB Patwari", nameHi: "पीएसएसएसबी पटवारी" },
+      { slug: "driver", name: "PSSSB Driver", nameHi: "पीएसएसएसबी ड्राइवर" },
     ],
+  },
+  {
+    // Elementary Teacher Training (ETT) teachers are hired by the Education Recruitment Board under the Punjab School Education
+    // Department (erd.punjab.gov.in).
+    slug: "erb-punjab",
+    name: "Education Recruitment Board, Punjab",
+    nameHi: "शिक्षा भर्ती बोर्ड, पंजाब",
+    sites: ["pb"],
+    exams: [{ slug: "ett", name: "Punjab ETT Teacher", nameHi: "पंजाब ईटीटी शिक्षक" }],
   },
   {
     slug: "punjab-police",
@@ -262,6 +274,22 @@ export const catalogue: BodySeed[] = [
     sites: ["hr"],
     exams: [{ slug: "assistant-steno-typist", name: "SVSU Assistant & Steno-typist", nameHi: "एसवीएसयू असिस्टेंट एवं स्टेनो-टाइपिस्ट" }],
   },
+  {
+    // Added 13 November 2026 from the FreeJobAlert Haryana page: the 110-post HARTRON Data Entry Operator notice (written test + typing).
+    slug: "hartron",
+    name: "HARTRON",
+    nameHi: "हार्ट्रोन",
+    sites: ["hr"],
+    exams: [{ slug: "data-entry-operator", name: "HARTRON Data Entry Operator", nameHi: "हार्ट्रोन डेटा एंट्री ऑपरेटर" }],
+  },
+  {
+    // Added 13 November 2026 from the same page: District Court Nuh Stenographer Grade-III (8 posts, 2026 notice).
+    slug: "haryana-district-courts",
+    name: "Haryana District Courts",
+    nameHi: "हरियाणा जिला न्यायालय",
+    sites: ["hr"],
+    exams: [{ slug: "stenographer-grade-3", name: "Haryana Court Stenographer Grade III", nameHi: "हरियाणा कोर्ट स्टेनोग्राफर ग्रेड III" }],
+  },
   // Rajasthan (rjtestseries.in only). Exam names carry the body so they stay unique in the /tests filter.
   {
     slug: "rssb",
@@ -272,6 +300,8 @@ export const catalogue: BodySeed[] = [
       { slug: "cet-senior-secondary", name: "Rajasthan CET (12th Level)", nameHi: "राजस्थान सीईटी (12वीं स्तर)" },
       { slug: "cet-graduation", name: "Rajasthan CET (Graduation Level)", nameHi: "राजस्थान सीईटी (स्नातक स्तर)" },
       { slug: "teaching-associate", name: "RSSB Teaching Associate", nameHi: "आरएसएसबी टीचिंग एसोसिएट" },
+      // Added 13 November 2026 from FreeJobAlert's Rajasthan page (Patwari syllabus and pattern update, 4 Nov 2026). No exam date yet.
+      { slug: "patwari", name: "Rajasthan Patwari", nameHi: "राजस्थान पटवारी" },
     ],
   },
   {
@@ -289,7 +319,19 @@ export const catalogue: BodySeed[] = [
           { slug: "mains", name: "Mains", nameHi: "मुख्य" },
         ],
       },
+      // Added 13 November 2026 from FreeJobAlert's Rajasthan page (admit card out 12 Nov 2026, exam on 15 Nov 2026).
+      { slug: "protection-officer", name: "RPSC Protection Officer", nameHi: "आरपीएससी संरक्षण अधिकारी" },
     ],
+  },
+  // Central University of Rajasthan (Bandarsindri, Ajmer). Added 13 November 2026 from FreeJobAlert's Rajasthan page: of the
+  // 24 entries there, its Lower Division Clerk notice is the only one that may include a written test; the rest are interview,
+  // walk-in, contract or merit-list recruitments with no MCQ paper to practise.
+  {
+    slug: "curaj",
+    name: "Central University of Rajasthan",
+    nameHi: "राजस्थान केंद्रीय विश्वविद्यालय",
+    sites: ["rj"],
+    exams: [{ slug: "lower-division-clerk", name: "CURAJ Lower Division Clerk", nameHi: "कुराज लोअर डिवीजन क्लर्क" }],
   },
   // National defence entries that many Himachal aspirants sit; not Himachal recruitments.
   {

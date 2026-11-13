@@ -791,4 +791,112 @@ Paper me **Himachal GK, social science, everyday science, reasoning, Hindi aur E
       },
     ],
   },
+
+  "hprca/physical-education-teacher": {
+    seo: {
+      title: "HPRCA PE Teacher Mock Test {year} — Free Physical Education Test",
+      description: "Free HPRCA Physical Education Teacher mock test: sports rules, anatomy, yoga, first aid, pedagogy and Himachal GK in real CBT format, with Hindi & English solutions.",
+    },
+    description: `**Physical Education Teacher** posts in Himachal Pradesh government schools are filled by the **Himachal Pradesh Rajya Chayan Aayog (HPRCA), Hamirpur**. In the November 2026 notification (Advt No. 14/2026) HPRCA advertised **187 Physical Education Teacher posts (Post Code 26059)** among 2,423 subject-teacher posts, and earlier teacher notifications had separate Physical Education posts with a computer-based test announced for 27 October 2026. The qualification asked for is a B.P.Ed., B.P.E., an integrated physical education degree or another NCTE-recognised qualification as listed in the advertisement.
+
+As reported, selection is through a **computer-based test or written screening test of 120 MCQs (120 marks, 90 minutes)**, followed by merit ranking and document verification. The notification does not specify negative marking, so check the official advertisement on hprca.hp.gov.in before you rely on any figure here. Qualification, age limit (18 to 45 years as on 1 January 2026) and the engagement terms change with each notification.
+
+Paper me **physical education aur sports, anatomy aur physiology, yoga, first aid, games ke rules aur sports awards** ke saath **Himachal GK, current affairs, reasoning, English aur Hindi** ke questions aate hain. Subject ke marks sabse zyada hote hain, isliye rules aur terminology par pakad banana zaroori hai.
+
+**How to prepare:** learn the court and field measurements and player numbers of the major games, revise the skeleton and muscular system, fitness components and training methods, and keep Olympic and award facts in short notes. Take the free [HPRCA Physical Education Teacher mock](${free("hprca-physical-education-teacher-free-mock-1")}) to see the CBT format, then add one timed mock a week.`,
+    syllabus: `The detailed syllabus is published with the HPRCA notification. Usual areas for Physical Education Teacher:
+
+### Physical education and sports
+- History and aims of physical education; Olympic Games, Asian Games and Commonwealth Games
+- Rules, court and field measurements of athletics, football, volleyball, basketball, kabaddi, kho-kho, cricket and hockey
+- Sports awards and institutions in India
+
+### Anatomy, physiology and training
+- Skeletal and muscular systems, circulation and respiration
+- Components of fitness: strength, speed, endurance, flexibility, agility
+- Training methods, warm-up and cool-down, sports injuries
+
+### Yoga, health and first aid
+- Asanas, pranayama, the eight limbs of yoga and yoga in school
+- Nutrition, hygiene and common health problems
+- First aid for bleeding, fractures, burns and sprains
+
+### Pedagogy and general awareness
+- Child development, learning theories and teaching methods
+- Himachal Pradesh GK and current affairs, reasoning, English and Hindi`,
+    faqs: [
+      {
+        q: "HPRCA Physical Education Teacher ke liye qualification kya hai?",
+        a: "Reports ke mutabik B.P.Ed., B.P.E., integrated physical education degree ya koi NCTE-recognised qualification, jaisa advertisement me diya gaya ho. Age limit 18 se 45 saal (1 January 2026 tak). Official notification hprca.hp.gov.in par dekhein.",
+      },
+      {
+        q: "How many Physical Education Teacher posts did HPRCA advertise in November 2026?",
+        a: "Advt No. 14/2026 lists 187 Physical Education Teacher posts (Post Code 26059) out of 2,423 subject-teacher posts, as reported. The number is tentative, so confirm it in the official advertisement.",
+      },
+      {
+        q: "What is the HPRCA Physical Education Teacher exam pattern?",
+        a: "As reported, a computer-based or written screening test of 120 MCQs for 120 marks in 90 minutes. Negative marking is not specified in the notification, so check the official advertisement.",
+      },
+      {
+        q: "Physical Education Teacher ka syllabus kya hai?",
+        a: "Sports aur games ke rules, anatomy aur physiology, fitness aur training, yoga, first aid, pedagogy, Himachal GK, current affairs, reasoning, English aur Hindi.",
+      },
+      {
+        q: "Is there a free mock test for HPRCA Physical Education Teacher?",
+        a: "Yes. The free 15-question mock covers sports and physical education, yoga and first aid, pedagogy and Himachal GK, with Hindi and English solutions.",
+      },
+    ],
+  },
+
+  "hprca/computer-teacher": {
+    seo: {
+      title: "HPRCA Computer Teacher Mock Test {year} — Free Online Test",
+      description: "Free HPRCA Computer Teacher mock test: computer fundamentals, programming, DBMS, networking, pedagogy and Himachal GK in CBT format, with Hindi & English solutions.",
+    },
+    description: `**Computer Teacher** posts in Himachal Pradesh government schools are filled by the **Himachal Pradesh Rajya Chayan Aayog (HPRCA), Hamirpur**. In the November 2026 notification (Advt No. 14/2026) HPRCA advertised **95 Computer Teacher posts (Post Code 26056)** among 2,423 subject-teacher posts. As listed on the advertisement, the qualification is a computer science or IT degree, or a route such as an MCA, M.Sc. in computer science, a postgraduate diploma or a DOEACC level qualification, with proficiency in teaching in Hindi and English.
+
+As reported, selection is through a **computer-based test or written screening test of 120 MCQs (120 marks, 90 minutes)**, followed by merit ranking and document verification. Negative marking is not specified, so read the official advertisement on hprca.hp.gov.in. Age limit, minimum marks and the temporary engagement terms are set in the notification and can change in the next one.
+
+Paper me **computer fundamentals, hardware aur memory, programming basics, DBMS aur SQL, networking aur internet, operating systems aur web technologies** ke questions aate hain, saath me **pedagogy, Himachal GK, current affairs, reasoning, English aur Hindi**. Technical section ka weightage zyada hai, isliye concepts clear rakhna zaroori hai.
+
+**How to prepare:** revise number systems, memory types, SQL queries and keys, IP addressing and basic C or Python programs, and read child development and learning theories for the pedagogy part. Start with the free [HPRCA Computer Teacher mock](${free("hprca-computer-teacher-free-mock-1")}) to get used to the CBT screen, then take a timed mock every week.`,
+    syllabus: `The detailed syllabus is published with the HPRCA notification. Usual areas for Computer Teacher:
+
+### Computer science
+- Computer fundamentals, generations, input and output devices, memory and storage
+- Number systems and conversions, Boolean algebra and logic gates
+- Operating systems, MS Office and software types
+- Programming basics in C, C++ or Python; algorithms, flowcharts, data structures
+
+### Databases and networking
+- DBMS concepts, keys, normalisation and SQL queries
+- Computer networks, topologies, protocols, IP addressing and the internet
+- Web technologies (HTML) and cyber security basics
+
+### Pedagogy and general awareness
+- Child development, learning theories and teaching methods, with ICT in education
+- Himachal Pradesh GK and current affairs, reasoning, English and Hindi`,
+    faqs: [
+      {
+        q: "HPRCA Computer Teacher ke liye qualification kya hai?",
+        a: "Reports ke mutabik computer science ya IT me degree, ya MCA, M.Sc. computer science, PG diploma ya DOEACC jaisa route, jaisa advertisement me diya gaya ho. Age limit 18 se 45 saal (1 January 2026 tak). Official notification hprca.hp.gov.in par dekhein.",
+      },
+      {
+        q: "How many Computer Teacher posts did HPRCA advertise in November 2026?",
+        a: "Advt No. 14/2026 lists 95 Computer Teacher posts (Post Code 26056) out of 2,423 subject-teacher posts, as reported. The number is tentative, so confirm it in the official advertisement.",
+      },
+      {
+        q: "What is the HPRCA Computer Teacher exam pattern?",
+        a: "As reported, a computer-based or written screening test of 120 MCQs for 120 marks in 90 minutes. Negative marking is not specified in the notification, so check the official advertisement.",
+      },
+      {
+        q: "Computer Teacher ka syllabus kya hai?",
+        a: "Computer fundamentals, programming basics, DBMS aur SQL, networking aur internet, pedagogy, Himachal GK, current affairs, reasoning, English aur Hindi.",
+      },
+      {
+        q: "Is there a free mock test for HPRCA Computer Teacher?",
+        a: "Yes. The free 15-question mock covers computer fundamentals, programming, DBMS and networking, pedagogy and Himachal GK, with Hindi and English solutions.",
+      },
+    ],
+  },
 };

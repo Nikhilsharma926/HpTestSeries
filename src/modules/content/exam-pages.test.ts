@@ -6,6 +6,8 @@ import { PATWARI_TESTS } from "../../../prisma/patwari";
 import { COURT_CLERK_TESTS } from "../../../prisma/pb-court-clerk";
 import { ALL_HR_EXAM_TESTS } from "../../../prisma/hr-exams";
 import { ALL_PB_EXAM_TESTS } from "../../../prisma/pb-exams";
+import { ALL_PB_NEW_EXAM_TESTS } from "../../../prisma/pb-exams/new-exams";
+import { ALL_RJ_EXAM_TESTS } from "../../../prisma/rj-exams";
 import { PB_PATWARI_TESTS } from "../../../prisma/pb-patwari";
 import { examContent, posts } from "../../../prisma/seed-content";
 import { HP_GK_FREE_MOCK_SLUGS } from "../../../prisma/seed-hp-gk-mocks";
@@ -27,7 +29,9 @@ const testSlugs = new Set([
   ...COURT_CLERK_TESTS.map((t) => t.slug),
   ...PB_PATWARI_TESTS.map((t) => t.slug),
   ...ALL_PB_EXAM_TESTS.map((t) => t.slug),
+  ...ALL_PB_NEW_EXAM_TESTS.map((t) => t.slug),
   ...ALL_HR_EXAM_TESTS.map((t) => t.slug),
+  ...ALL_RJ_EXAM_TESTS.map((t) => t.slug),
   hp.freeMockSlug,
   pb.freeMockSlug,
   hr.freeMockSlug,
@@ -130,6 +134,7 @@ describe("exam page copy", () => {
       "psssb/group-d",
       "punjab-courts/clerk",
       "punjab-police/constable",
+      "rssb/patwari",
     ]);
   });
 });

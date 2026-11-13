@@ -262,4 +262,102 @@ The same reports say the selection for these posts combines a **written test of 
       },
     ],
   },
+  "hartron/data-entry-operator": {
+    seo: {
+      title: "HARTRON Data Entry Operator Mock Test {year} — Free Practice",
+      description:
+        "Free HARTRON Data Entry Operator (DEO) mock test with reasoning, maths, English and computer questions in the real online format, with solutions in English and Hindi.",
+    },
+    description: `**HARTRON** (Haryana State Electronics Development Corporation) hires **Data Entry Operators** for e-governance and IT work across Haryana. In November 2026 the FreeJobAlert Haryana page listed a HARTRON Data Entry Operator notice for **110 posts**, open to candidates with **BCA, B.Sc or a diploma**, with the last date shown as **22 November 2026**. These details come from a third-party summary and are not checked against hartron.org.in, and HARTRON's earlier DEO notices have had different post counts, so confirm the vacancies, qualification, age limit and last date on the official notice before you apply.
+
+Reports on earlier HARTRON DEO rounds describe a **written objective test followed by a typing or skill test**, then document verification. We have not seen an official section-wise split for the 2026 round, so treat any "syllabus" you find online as expected, not final.
+
+**How to prepare:** A Data Entry Operator paper is usually clerical level. Spend most of your time on **computer basics** (MS Office, keyboard shortcuts, internet, storage devices, number systems) and **basic maths** (percentage, ratio, average, simple interest, time and work), then reasoning and English grammar. Practise typing every day, because the skill test decides the final merit in most DEO recruitments.
+
+**Our mocks:** the free paper is [HARTRON Data Entry Operator Free Mock Test 1](/tests/hartron-deo-free-mock-1): 50 questions in 60 minutes across reasoning, maths, English and computer, with a solution in English and Hindi for every question. The subjects, length and marking are our own, since HARTRON has not published a split we could confirm, and the typing test is not covered.`,
+    syllabus: `HARTRON had not published a confirmed written-test syllabus when this page was written. The topics below are what Data Entry Operator tests usually cover.
+
+### Computer
+- Computer fundamentals, hardware and software, input and output devices
+- MS Word, Excel and PowerPoint basics, keyboard shortcuts
+- Internet, email and number systems
+
+### Maths
+- Percentage, ratio, average, profit and loss
+- Simple interest, time and work, speed and distance
+
+### Reasoning
+- Series, analogy, coding-decoding, blood relations, direction sense
+
+### English
+- Grammar, vocabulary, synonyms and antonyms, comprehension
+
+### Typing test (not covered by our mocks)
+- Speed and accuracy in English and/or Hindi, as set in the notice`,
+    faqs: [
+      {
+        q: "How many posts are in the HARTRON Data Entry Operator recruitment?",
+        a: "A job-alert site listed 110 posts in November 2026, but HARTRON's earlier DEO notices have had other counts. Confirm the number in the official notice on hartron.org.in.",
+      },
+      {
+        q: "What is the selection process for the HARTRON DEO?",
+        a: "Reports on earlier rounds describe a written objective test, a typing or skill test and document verification. Read the 2026 notice for the exact stages and weightage.",
+      },
+      {
+        q: "What qualification is needed for the HARTRON Data Entry Operator post?",
+        a: "The summary we saw lists BCA, B.Sc or a diploma. The official notice has the exact degree, subject and age requirements, so check it before you apply.",
+      },
+      {
+        q: "Does the free mock cover the typing test?",
+        a: "No. It covers the written part only. Practise typing speed and accuracy separately, because the skill test is a separate stage.",
+      },
+    ],
+  },
+  "haryana-district-courts/stenographer-grade-3": {
+    seo: {
+      title: "Haryana Court Stenographer Grade III Mock Test {year} — Free",
+      description:
+        "Free practice for the Haryana District Court Stenographer Grade III recruitment: English, computer and general awareness questions with solutions and skill-test guidance.",
+    },
+    description: `Haryana's **District Courts** fill **Stenographer Grade III** posts through short, court-level recruitments. In November 2026 the FreeJobAlert Haryana page listed a **District Court Nuh** notice for **8 Stenographer Grade-III posts**, with the last date shown as **25 November 2026**, and a notice date of 6 November 2026. These details come from a third-party summary and are not checked against the official court website, so confirm the posts, pay, age limit and last date there before you apply.
+
+Reports describe the 2026 selection as **skill-based**: an **English shorthand test at 80 words per minute**, a **transcription test at 20 words per minute on a computer**, and document verification. The qualification reported is a **graduate degree** with computer knowledge. Applications for these court posts are usually **offline**, sent by post or by hand, so read the address and the form format in the notice. Earlier court rounds of the same post have been reported with slightly different stages, so do not assume the process repeats.
+
+**How to prepare:** The stenographer posts are won on **speed and accuracy**. Practise English shorthand dictation daily at a speed above the cut-off, and transcribe on a computer with correct spelling and punctuation. Keep your **English grammar, computer basics and general awareness** in shape for any written or interview stage.
+
+**Our mocks:** the free paper is [Haryana Court Stenographer Grade III Free Mock Test 1](/tests/haryana-court-steno-free-mock-1): 40 questions in 40 minutes covering English, computer and general awareness. It does **not** replace shorthand or transcription practice, and the split is our own because no MCQ paper has been published for this notice.`,
+    syllabus: `The notice is reported to test skills, not a written MCQ syllabus. The topics below are what help around those skill tests.
+
+### Shorthand and transcription (not covered by our mocks)
+- English shorthand dictation at the speed set in the notice (80 wpm reported)
+- Computer transcription at the speed set in the notice (20 wpm reported)
+
+### English
+- Grammar, spelling, punctuation, vocabulary and comprehension
+
+### Computer
+- Typing, MS Word, file handling and keyboard shortcuts
+- Computer basics and internet
+
+### General Awareness
+- Indian polity, history, geography and basic general science`,
+    faqs: [
+      {
+        q: "How many posts are in the Nuh District Court Stenographer recruitment?",
+        a: "A job-alert site listed 8 Stenographer Grade-III posts in November 2026. Confirm the number in the official notice on the district court website.",
+      },
+      {
+        q: "What shorthand speed is needed for the Haryana court stenographer post?",
+        a: "Reports on the 2026 Nuh notice say English shorthand at 80 words per minute and computer transcription at 20 words per minute. Check the notice for the exact test conditions.",
+      },
+      {
+        q: "Is there a written MCQ exam for the court Stenographer Grade III post?",
+        a: "The 2026 notice is reported to select on skill tests, not an MCQ paper, though earlier rounds have been reported differently. Read the official notice.",
+      },
+      {
+        q: "How do I apply for the Haryana court Stenographer Grade III post?",
+        a: "Reports say the application is offline, by post or by hand. Use the form and address given in the official notice, and check the last date.",
+      },
+    ],
+  },
 };

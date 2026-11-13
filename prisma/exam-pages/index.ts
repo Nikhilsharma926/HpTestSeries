@@ -7,6 +7,7 @@ import { HPRCA_PAGES } from "./hprca";
 import { JAM_PAGES } from "./jam";
 import { OTHER_PAGES } from "./others";
 import { PUNJAB_PAGES } from "./punjab";
+import { PUNJAB_JOBS_PAGES } from "./punjab-jobs";
 import { RAJASTHAN_PAGES } from "./rajasthan";
 import { SSC_PAGES } from "./ssc";
 import type { ExamPages } from "./types";
@@ -19,4 +20,4 @@ export { PUNJAB_POSTS } from "./punjab-posts";
 export { RAJASTHAN_POSTS } from "./rajasthan-posts";
 
 /** Public copy for every exam page, keyed "bodySlug/examSlug". Seeded by prisma/seed-content.ts. */
-export const EXAM_PAGES: ExamPages = { ...HPRCA_PAGES, ...HPPSC_PAGES, ...OTHER_PAGES, ...HP_MORE_PAGES, ...DEFENCE_PAGES, ...DELHI_POLICE_PAGES, ...JAM_PAGES, ...PUNJAB_PAGES, ...HARYANA_PAGES, ...RAJASTHAN_PAGES, ...SSC_PAGES };
+export const EXAM_PAGES: ExamPages = { ...HPRCA_PAGES, ...HPPSC_PAGES, ...OTHER_PAGES, ...HP_MORE_PAGES, ...DEFENCE_PAGES, ...DELHI_POLICE_PAGES, ...JAM_PAGES, ...PUNJAB_PAGES, ...PUNJAB_JOBS_PAGES, ...HARYANA_PAGES, ...RAJASTHAN_PAGES, ...SSC_PAGES };

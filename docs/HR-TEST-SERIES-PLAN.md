@@ -90,6 +90,7 @@ same day. Not confirmed, so no copy may state it as fact.
 | Haryana free GK mock | ✅ live (noindex) |
 | Exams listed (HSSC CET, Haryana Police Constable, HPSC HCS, HTET, SVSU Assistant/Steno-typist) with exam pages | ✅ in code (11 Nov 2026), needs `db:seed` |
 | Free mock for Haryana Police Constable, HPSC HCS, HTET and SVSU (`prisma/hr-exams`; the CET free mock is in `prisma/hr-cet/mocks.ts`; products hidden) | ✅ in code, needs `db:seed`. Section splits and marking are ours, to confirm against each notice |
+| HARTRON Data Entry Operator (110 posts) and Haryana Court Stenographer Grade III (Nuh, 8 posts): exam pages, one free mock each (`prisma/hr-exams`, hidden products), 7 SEO posts (`prisma/exam-pages/haryana-jobs-posts.ts`) | ✅ in code (13 Nov 2026), needs `db:seed`. Source: FreeJobAlert Haryana page + web search, **not checked against hartron.org.in or the court site**; the court-steno notice is reported to be skill-test based, so its mock covers only English, computer and GK |
 | Haryana GK bank | not started |
 | CET series (free + 6 mocks + sectionals) | in progress: free mock + paid mocks 1–2 (`prisma/hr-cet/mocks.ts`, 300 Qs, Haryana GK new, other sections reused from the HP/Punjab banks) and 4 Haryana GK sectionals done; paid mocks 3–6 and 11 other sectionals to go |
 | Police series | not started |

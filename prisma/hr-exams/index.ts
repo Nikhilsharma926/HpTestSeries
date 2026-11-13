@@ -242,10 +242,62 @@ export const SVSU_FREE_TEST = mock(
   "The SVSU notice (Advt. SVSU/2026/Estt./NT/C&D/25-31) gives the written test 50 marks, followed by a skill test, but says the structure and syllabus will be uploaded later. The subjects, duration and marking here are ours. The skill and shorthand tests are not covered.",
 );
 
+// ───────── HARTRON Data Entry Operator (added 13 November 2026; claimed after the four tests above so their questions do not move) ─────────
+export const HARTRON_FREE_MOCK_SLUG = "hartron-deo-free-mock-1";
+export const HARTRON_SECTIONS: Sec[] = [
+  { ...REASONING, count: 10 },
+  { ...MATHS, count: 15 },
+  { ...ENGLISH, count: 10 },
+  { ...COMPUTER, count: 15 },
+];
+const hartronQuestions = [
+  ...claim(0, 10, GENERAL_POOL, reasoning, "easy", "HARTRON Reasoning"),
+  ...claim(1, 15, GENERAL_POOL, quant, "easy", "HARTRON Maths"),
+  ...claim(2, 10, GENERAL_POOL, english, "easy", "HARTRON English"),
+  ...claim(3, 15, GENERAL_POOL, computer, "easy", "HARTRON Computer"),
+];
+export const HARTRON_FREE_TEST = mock(
+  HARTRON_FREE_MOCK_SLUG,
+  "HARTRON Data Entry Operator Free Mock Test 1",
+  "हार्ट्रोन डेटा एंट्री ऑपरेटर फ़्री मॉक टेस्ट 1",
+  60,
+  0,
+  "HARTRON Data Entry Operator written test",
+  HARTRON_SECTIONS,
+  hartronQuestions,
+  "Reports say the selection is a written test followed by a typing or skill test, but we have not seen a section-wise split from HARTRON, so the subjects, length and marking here are ours. The typing test is not covered.",
+);
+
+// ───────── Haryana District Court Stenographer Grade III (computer and English proficiency part only) ─────────
+export const COURT_STENO_FREE_MOCK_SLUG = "haryana-court-steno-free-mock-1";
+export const COURT_STENO_SECTIONS: Sec[] = [
+  { ...ENGLISH, count: 15 },
+  { ...COMPUTER, count: 15 },
+  { ...GA, count: 10 },
+];
+const courtStenoQuestions = [
+  ...claim(0, 15, GENERAL_POOL, english, "exam", "Court Steno English"),
+  ...claim(1, 15, GENERAL_POOL, computer, "exam", "Court Steno Computer"),
+  ...claim(2, 10, GENERAL_POOL, gk, "easy", "Court Steno General Awareness"),
+];
+export const COURT_STENO_FREE_TEST = mock(
+  COURT_STENO_FREE_MOCK_SLUG,
+  "Haryana Court Stenographer Grade III Free Mock Test 1",
+  "हरियाणा कोर्ट स्टेनोग्राफर ग्रेड III फ़्री मॉक टेस्ट 1",
+  40,
+  0,
+  "Haryana District Court Stenographer Grade III recruitment",
+  COURT_STENO_SECTIONS,
+  courtStenoQuestions,
+  "The 2026 Nuh notice is reported to select on skill tests (English shorthand at 80 wpm and computer transcription at 20 wpm) and does not publish an MCQ paper, so this test only practises the English, computer and general-awareness knowledge around the skill tests. The shorthand and transcription tests are not covered.",
+);
+
 export const HR_EXAM_TESTS = {
   police: [POLICE_FREE_TEST],
   hcs: [HCS_FREE_TEST],
   htet: [HTET_FREE_TEST],
   svsu: [SVSU_FREE_TEST],
+  hartron: [HARTRON_FREE_TEST],
+  courtSteno: [COURT_STENO_FREE_TEST],
 };
 export const ALL_HR_EXAM_TESTS: TestDef[] = Object.values(HR_EXAM_TESTS).flat();

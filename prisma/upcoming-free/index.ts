@@ -10,6 +10,8 @@ import { hpSetMock1 } from "./hp-set";
 import { kccbJccbClerkMock1 } from "./kccb-jccb-clerk";
 import { labAssistantMock1 } from "./lab-assistant";
 import { naibTehsildarMock1 } from "./naib-tehsildar";
+import { computerTeacherMock1 } from "./computer-teacher";
+import { physicalEducationTeacherMock1 } from "./physical-education-teacher";
 import { adoMock1 } from "./ado";
 import { asstProfMock1 } from "./asst-prof";
 import { clerkMock1 } from "./clerk";
@@ -553,6 +555,39 @@ const TESTS: UpcomingFreeTest[] = [
       { name: "Road Safety & Vehicle Knowledge", nameHi: "सड़क सुरक्षा एवं वाहन ज्ञान" },
     ],
     questions: driverConstableMock1,
+  },
+  {
+    bodySlug: "hprca",
+    examSlug: "physical-education-teacher",
+    slug: "hprca-physical-education-teacher-free-mock-1",
+    title: "HPRCA Physical Education Teacher Free Mock Test 1",
+    titleHi: "एचपीआरसीए शारीरिक शिक्षा शिक्षक फ्री मॉक टेस्ट 1",
+    durationSec: 15 * 60,
+    instructions: instructions("HPRCA Physical Education Teacher", "Physical Education & Sports (7), Yoga, Health & First Aid (3), Child Development & Pedagogy (2), Himachal GK (3)"),
+    sections: [
+      { name: "Physical Education & Sports", nameHi: "शारीरिक शिक्षा एवं खेल" },
+      { name: "Yoga, Health & First Aid", nameHi: "योग, स्वास्थ्य एवं प्राथमिक उपचार" },
+      { name: "Child Development & Pedagogy", nameHi: "बाल विकास एवं शिक्षाशास्त्र" },
+      { name: "Himachal GK", nameHi: "हिमाचल सामान्य ज्ञान" },
+    ],
+    questions: physicalEducationTeacherMock1,
+  },
+  {
+    bodySlug: "hprca",
+    examSlug: "computer-teacher",
+    slug: "hprca-computer-teacher-free-mock-1",
+    title: "HPRCA Computer Teacher Free Mock Test 1",
+    titleHi: "एचपीआरसीए कंप्यूटर शिक्षक फ्री मॉक टेस्ट 1",
+    durationSec: 15 * 60,
+    instructions: instructions("HPRCA Computer Teacher", "Computer Fundamentals & Hardware (4), Programming (3), DBMS & Networking (3), Child Development & Pedagogy (2), Himachal GK (3)"),
+    sections: [
+      { name: "Computer Fundamentals & Hardware", nameHi: "कंप्यूटर मूल बातें एवं हार्डवेयर" },
+      { name: "Programming", nameHi: "प्रोग्रामिंग" },
+      { name: "DBMS & Networking", nameHi: "डीबीएमएस एवं नेटवर्किंग" },
+      { name: "Child Development & Pedagogy", nameHi: "बाल विकास एवं शिक्षाशास्त्र" },
+      { name: "Himachal GK", nameHi: "हिमाचल सामान्य ज्ञान" },
+    ],
+    questions: computerTeacherMock1,
   },
 ];
 

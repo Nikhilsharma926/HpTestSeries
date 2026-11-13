@@ -629,4 +629,16 @@ export const taxonomy: SubjectSeed[] = [
       ["geomorphology-hydrology", "Geomorphology, Hydrology & Economic Geology"],
     ],
   },
+  {
+    slug: "physical-education",
+    name: "Physical Education & Sports",
+    nameHi: "शारीरिक शिक्षा एवं खेल",
+    topics: [
+      ["anatomy-physiology", "Anatomy & Physiology"],
+      ["exercise-training", "Exercise, Fitness & Training Methods"],
+      ["games-sports-rules", "Games, Sports & Their Rules"],
+      ["yoga-health-first-aid", "Yoga, Health & First Aid"],
+      ["sports-history-awards", "Olympics, Sports History & Awards"],
+    ],
+  },
 ];

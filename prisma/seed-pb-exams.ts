@@ -1,9 +1,10 @@
-// Free mocks and hidden series for the PSSSB Group D, Clerk, Junior Engineer (Civil, Electrical) and PPSC PCS exams on
+// Free mocks and hidden series for the PSSSB Group D, Clerk, Driver, Junior Engineer (Civil, Electrical), PPSC PCS and Punjab ETT exams on
 // pbtestseries.in (pbtestseries.in exam pages were empty). Each product is created hidden until there are paid mocks to
 // sell; switch it on in /admin/products. Adding a new test = adding it to prisma/pb-exams/index.ts.
 
 import type { PrismaClient } from "../src/generated/prisma/client";
 import { PB_EXAM_TESTS } from "./pb-exams";
+import { PB_NEW_EXAM_TESTS } from "./pb-exams/new-exams";
 import { seedSeries, type SeriesSeed } from "./seed-series";
 
 const VALIDITY_DAYS = 180;
@@ -57,6 +58,24 @@ const CONFIGS: Cfg[] = [
     nameHi: "पीपीएससी पीसीएस प्रीलिम्स",
     description: "Mocks for the PPSC PCS Preliminary exam (General Studies): Punjab GK, History & Polity, Geography & Economy, Science & Current Affairs at exam level.",
     tests: PB_EXAM_TESTS.pcs,
+  },
+  {
+    key: "psssb-driver",
+    bodySlug: "psssb",
+    examSlug: "driver",
+    name: "PSSSB Driver",
+    nameHi: "पीएसएसएसबी ड्राइवर",
+    description: "Mocks for the PSSSB Driver written exam (Advt. 12 of 2026): GK, Punjab history & culture, reasoning, Punjabi, English, ICT and Driving Technique & Motor Car Mechanism with a quarter-mark negative.",
+    tests: PB_NEW_EXAM_TESTS.driver,
+  },
+  {
+    key: "erb-punjab-ett",
+    bodySlug: "erb-punjab",
+    examSlug: "ett",
+    name: "Punjab ETT Teacher",
+    nameHi: "पंजाब ईटीटी शिक्षक",
+    description: "Mocks for the Punjab ETT (Elementary Teacher Training) written exam, Paper B: Punjabi, English, Hindi, General Science, Social Studies and Mathematics.",
+    tests: PB_NEW_EXAM_TESTS.ett,
   },
 ];
 

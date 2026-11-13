@@ -10,10 +10,12 @@ const COUNTS: Record<string, { total: number; sections: number[]; minutes: numbe
   "hpsc-hcs-prelims-free-mock-1": { total: 100, sections: [20, 30, 25, 25], minutes: 120, marksWrong: 0.25 },
   "bseh-htet-free-mock-1": { total: 150, sections: [30, 30, 30, 30, 30], minutes: 150, marksWrong: 0 },
   "svsu-assistant-free-mock-1": { total: 50, sections: [15, 10, 10, 10, 5], minutes: 50, marksWrong: 0 },
+  "hartron-deo-free-mock-1": { total: 50, sections: [10, 15, 10, 15], minutes: 60, marksWrong: 0 },
+  "haryana-court-steno-free-mock-1": { total: 40, sections: [15, 15, 10], minutes: 40, marksWrong: 0 },
 };
 
-describe("Haryana free mocks (Police, HCS, HTET, SVSU)", () => {
-  it("covers exactly the four planned tests", () => {
+describe("Haryana free mocks (Police, HCS, HTET, SVSU, HARTRON, Court Steno)", () => {
+  it("covers exactly the six planned tests", () => {
     expect(ALL_HR_EXAM_TESTS.map((t) => t.slug).sort()).toEqual(Object.keys(COUNTS).sort());
   });
 

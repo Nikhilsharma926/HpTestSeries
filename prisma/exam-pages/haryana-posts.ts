@@ -1,4 +1,5 @@
 import { hr } from "../../src/sites/hr";
+import { HARYANA_JOBS_POSTS } from "./haryana-jobs-posts";
 import type { PostSeed } from "./types";
 
 const FREE_MOCK = `/tests/${hr.freeMockSlug}`;
@@ -355,4 +356,5 @@ ${MOCK_CTA}`,
       { q: "Haryana GK kaise yaad rakhein?", a: "District-wise notes banao, roz revise karo aur mock tests se practice karo." },
     ],
   },
+  ...HARYANA_JOBS_POSTS,
 ];

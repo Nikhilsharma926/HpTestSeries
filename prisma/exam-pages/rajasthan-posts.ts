@@ -393,4 +393,362 @@ See the full [Teaching Associate syllabus](/rssb/teaching-associate/syllabus), a
       },
     ],
   },
+
+  // ───── Added 13 November 2026 from FreeJobAlert's Rajasthan government jobs page and its sidebar. FreeJobAlert is a third-party
+  // summary, so each post tells the reader to confirm the facts on the official site. ─────
+
+  {
+    slug: "rajasthan-government-jobs-november-2026-new-vacancies-list",
+    site: "rj",
+    seoTitle: "Rajasthan Govt Jobs November 2026: New Vacancies, Last Dates, Exams",
+    seoDescription:
+      "Rajasthan govt jobs open 13 Nov 2026: Railway Apprentice 2,008 posts, CURAJ, AIIMS Jodhpur, ESIC and more, with last dates and which have a written exam.",
+    title: "Rajasthan Government Jobs November 2026: Full List of New Vacancies, Last Dates and Which Ones Have an Exam",
+    titleHi: "राजस्थान सरकारी नौकरी नवंबर 2026: नई भर्तियों की पूरी सूची, अंतिम तिथि और कौन-सी में परीक्षा है",
+    excerpt:
+      "All the Rajasthan government recruitments open on 13 November 2026 with their last dates, and the one thing most lists skip: which of them have a written exam you can practise for and which are filled by interview or merit.",
+    category: "NOTIFICATION",
+    exams: ["rpsc/protection-officer", "rssb/patwari", "curaj/lower-division-clerk"],
+    content: `This is the list of **new Rajasthan government recruitments open on 13 November 2026**, taken from FreeJobAlert's Rajasthan page, with the last date for each and, for the posts where we could read the notice, how the selection is done. **Most of the 24 recruitments on that page have no written exam**: they are interview, walk-in, contract or merit-list posts. We say which, so you do not spend days preparing for a paper that does not exist.
+
+The facts below are from job-alert summaries. Always confirm the post, the last date and the fee on the official notice before you apply.
+
+## Posts where a written test is possible
+
+| Organisation | Post | Vacancies | Last date | Written test? |
+|---|---|---|---|---|
+| Central University of Rajasthan (CURAJ) | Lower Division Clerk | 1 | 10 Dec 2026 | Not confirmed: the notice says a written, trade or computer test *may* be held. See the [CURAJ LDC guide](/blog/curaj-lower-division-clerk-recruitment-2026-eligibility-last-date) |
+| CURAJ Incubation Foundation | Project Coordinator, Project Assistant, Office Assistant | 3 | 15 Nov 2026 | Not confirmed: a written test, skill test, presentation or interview *may* be used |
+| IIIT Kota | Security Supervisor (retired defence personnel) | 3 | 4 Dec 2026 | Interview after shortlisting; a selection test *may* be added |
+
+## Posts filled by merit list, interview or walk-in
+
+| Organisation | Post | Vacancies | Last date | Selection |
+|---|---|---|---|---|
+| RRC North Western Railway | Act Apprentice | 2,008 | 22 Nov 2026 | Merit list from Class 10 and ITI marks, no exam. See the [apprentice guide](/blog/rrc-north-western-railway-act-apprentice-2026-2008-posts-apply-merit) |
+| PM SHRI KV No. 1 Ajmer | TGT (English), Primary Teacher, Vocational Instructor | 3 | Walk-in 17 Nov 2026 | Walk-in interview, part-time contract |
+| ESIC Rajasthan (Jaipur) | Junior Engineer, Assistant Engineer (retired engineers) | 6 | 30 Nov 2026 | Screening and interview, contract |
+| CURAJ | Sports Coach | 9 | 21 Nov 2026 | Interview only |
+| RITES | Assistant Manager, Manager and others | 10 | about 19 Nov 2026 | No process stated; apply by email, contract |
+
+## Other recruitments (we did not read their selection process)
+
+These are mostly project, research or contract posts, which are usually filled by interview or walk-in.
+
+| Organisation | Post | Vacancies | Last date |
+|---|---|---|---|
+| AIIMS Jodhpur | Research Assistant | 1 | 13 Nov 2026 |
+| AIIMS Jodhpur | Project Nurse III | 1 | 16 Nov 2026 |
+| AIIMS Jodhpur | Scientist C | 1 | 20 Nov 2026 |
+| AIIMS Jodhpur | Project Research Scientist-III | 1 | 21 Nov 2026 |
+| AIIMS Jodhpur | Field Investigator | 2 | 25 Nov 2026 |
+| Mohanlal Sukhadia University (MLSU) | Project Associate, Project Assistant | 2 | 13 Nov 2026 |
+| MLSU | Visiting Faculty (walk-in) | 4 | 13 Nov 2026 |
+| University of Rajasthan | Post Doctoral Fellow, Project Assistant | 4 | 13 Nov 2026 |
+| CBI-SUAPS | Office Assistant | 1 | 17 Nov 2026 |
+| HLL | Operations Manager (Biomedical) | 1 | 18 Nov 2026 |
+| IIT Jodhpur | Registrar | 1 | 18 Nov 2026 |
+| CURAJ | Vice-Chancellor | not stated | 21 Nov 2026 |
+| IIM Udaipur | Senior Associate, Programs | 1 | 26 Nov 2026 |
+| ICAR CAZRI | Young Professional-I, Field Attendant | 2 | 27 Nov 2026 |
+| CURAJ | Junior Research Fellow / Project Associate-I | 1 | 30 Nov 2026 |
+| Oil India (OIL) | Consultant (Electrical Engineering) | 1 | 5 Dec 2026 |
+
+## The big Rajasthan exams are on the board's own calendar
+
+The state's large exams do not appear in the table above because they run on RPSC and RSSB calendars. Coming up:
+
+- **RPSC Protection Officer** on 15 November 2026: [admit card and paper timings](/blog/rpsc-protection-officer-exam-15-november-2026-admit-card-paper-timings)
+- **CET Senior Secondary** on 1 to 3 December 2026: [exam date and pattern](/blog/rajasthan-cet-12th-level-2026-exam-date-admit-card-pattern)
+- **RAS Prelims** on 6 December 2026: [admit card and pattern](/blog/rpsc-ras-prelims-2026-exam-date-admit-card-pattern)
+- **CET Graduation** on 16 to 18 January 2027: [date, pattern and syllabus](/blog/rajasthan-cet-graduation-2026-exam-date-pattern-syllabus)
+- **Rajasthan Patwari**: date not announced yet; read the [Patwari exam pattern and syllabus](/blog/rajasthan-patwari-exam-pattern-syllabus-2026-150-questions)
+
+See the full [revised RSSB exam calendar](/blog/rssb-exam-calendar-2026-revised-november-february). Rajasthan GK is common to all of them: start with the free [Rajasthan GK mock test](${FREE_MOCK}).
+
+## हिंदी में सार
+
+13 नवंबर 2026 को राजस्थान में 24 नई सरकारी भर्तियाँ खुली हैं। इनमें सबसे बड़ी **रेलवे (उत्तर पश्चिम रेलवे) की 2,008 एक्ट अप्रेंटिस पदों की भर्ती** है, जिसकी अंतिम तिथि 22 नवंबर 2026 है और जिसमें परीक्षा नहीं, मेरिट लिस्ट से चयन होता है। राजस्थान केंद्रीय विश्वविद्यालय (कुराज) के LDC पद की अंतिम तिथि 10 दिसंबर 2026 है। अधिकतर बाकी भर्तियाँ साक्षात्कार, वॉक-इन या संविदा आधारित हैं। आवेदन से पहले आधिकारिक अधिसूचना ज़रूर देखें।`,
+    faqs: [
+      {
+        q: "Which Rajasthan government job has the most vacancies right now?",
+        a: "The RRC North Western Railway Act Apprentice recruitment, with 2,008 posts as printed on the job-alert page, and a last date of 22 November 2026. Selection is by merit list, with no written exam.",
+      },
+      {
+        q: "Do these Rajasthan recruitments have a written exam?",
+        a: "Mostly not. Of the 24 on FreeJobAlert's Rajasthan page, the notices we read use a merit list, interview or walk-in. Only the CURAJ and IIIT Kota notices say a test may be held, and none gives a pattern.",
+      },
+      {
+        q: "Where are RPSC and RSSB exams in this list?",
+        a: "They are on the boards' own calendars. RPSC Protection Officer is on 15 November, CET Senior Secondary on 1 to 3 December, RAS Prelims on 6 December and CET Graduation on 16 to 18 January 2027.",
+      },
+    ],
+  },
+
+  {
+    slug: "rpsc-protection-officer-exam-15-november-2026-admit-card-paper-timings",
+    site: "rj",
+    seoTitle: "RPSC Protection Officer Exam 15 Nov 2026: Admit Card, Paper Timings",
+    seoDescription:
+      "RPSC Protection Officer exam is on 15 November 2026 for 12 posts. Admit card released 12 November, Paper I 9 AM to 12 noon, Paper II 2:30 to 5:30 PM, OMR-based.",
+    title: "RPSC Protection Officer Exam on 15 November 2026: Admit Card Out, Paper Timings and Last-Two-Days Plan",
+    titleHi: "RPSC संरक्षण अधिकारी परीक्षा 15 नवंबर 2026: एडमिट कार्ड जारी, पेपर का समय और तैयारी",
+    excerpt:
+      "RPSC's Protection Officer exam for 12 posts is on 15 November 2026. The admit card is out, Paper I is 9 AM to 12 noon and Paper II 2:30 to 5:30 PM. Here is what is known and how to use the last two days.",
+    category: "ADMIT_CARD",
+    exams: ["rpsc/protection-officer"],
+    content: `The **Rajasthan Public Service Commission (RPSC)** will hold the **Protection Officer Competitive Examination 2025** on **15 November 2026**, a Sunday. The **admit card was released on 12 November 2026**. There are **12 posts** in the Women and Child Development Department of Rajasthan (Advertisement No. 13/Exam/Protection Officer/RPSC/EP-1/2025-26).
+
+## Exam at a glance
+
+| Item | Detail |
+|---|---|
+| Conducting body | Rajasthan Public Service Commission (RPSC) |
+| Department | Women and Child Development, Rajasthan |
+| Posts | 12 |
+| Exam date | 15 November 2026 (Sunday) |
+| Paper I | General Studies, 9:00 AM to 12:00 noon |
+| Paper II | Social Work / Law, 2:30 PM to 5:30 PM |
+| Mode | Offline, OMR-based |
+| Official website | rpsc.rajasthan.gov.in |
+
+Both papers are on the same day, so plan for a full day at the centre.
+
+## How to download the admit card
+
+1. Go to [rpsc.rajasthan.gov.in](https://rpsc.rajasthan.gov.in) or the Rajasthan recruitment portal (recruitment.rajasthan.gov.in).
+2. Open the Protection Officer admit card link.
+3. Enter your application number and date of birth and download the admit card.
+4. Check your name, photo, roll number, centre and reporting time, and print it.
+
+Carry the printout and an original photo ID.
+
+## What we do not know yet
+
+Job-alert sites do not print the **number of questions, the marks, the negative marking or the syllabus split** for each paper. Read the instructions on your admit card and the RPSC notice. RPSC's other OMR papers give five options per question, with the fifth for a question you do not want to attempt, so **mark an option for every question** rather than leaving rows blank.
+
+## Plan for the last two days
+
+- **Today:** one timed General Studies paper. Our free [RPSC Protection Officer mock test](/tests/rpsc-protection-officer-free-mock-1) has 50 questions in 60 minutes, in the real exam interface, with solutions. Its length and marking are ours, not RPSC's, and Paper II is not covered.
+- **Day before:** revise polity, history timelines and Rajasthan GK. The free [Rajasthan GK mock test](${FREE_MOCK}) is a quick check.
+- **Paper II:** go through your social work and law notes and the laws relating to women and children; no general mock can replace them.
+- **Exam day:** reach the centre early, fill the OMR sheet slowly, and use the gap between the papers to eat and rest.
+
+See the [RPSC Protection Officer exam page](/rpsc/protection-officer) for the syllabus and FAQs, and the [Rajasthan exam calendar](/blog/rssb-exam-calendar-2026-revised-november-february) for what comes next.
+
+## हिंदी में सार
+
+RPSC संरक्षण अधिकारी परीक्षा **15 नवंबर 2026** को है। महिला एवं बाल विकास विभाग के **12 पदों** के लिए एडमिट कार्ड 12 नवंबर 2026 को जारी हो चुका है। प्रथम प्रश्न-पत्र (सामान्य अध्ययन) सुबह 9 से दोपहर 12 बजे और द्वितीय प्रश्न-पत्र (सामाजिक कार्य / विधि) दोपहर 2:30 से 5:30 बजे तक है। परीक्षा OMR आधारित है। प्रश्नों की संख्या और अंकन योजना के लिए एडमिट कार्ड और RPSC की अधिसूचना देखें।`,
+    faqs: [
+      {
+        q: "What is the date of the RPSC Protection Officer exam?",
+        a: "15 November 2026, a Sunday. Paper I (General Studies) is from 9:00 AM to 12:00 noon and Paper II (Social Work/Law) from 2:30 PM to 5:30 PM.",
+      },
+      {
+        q: "How many posts are in the RPSC Protection Officer recruitment?",
+        a: "12 posts in the Women and Child Development Department, Rajasthan, under Advertisement No. 13/Exam/Protection Officer/RPSC/EP-1/2025-26.",
+      },
+      {
+        q: "When was the Protection Officer admit card released?",
+        a: "On 12 November 2026. Download it with your application number and date of birth from the RPSC website or the Rajasthan recruitment portal.",
+      },
+    ],
+  },
+
+  {
+    slug: "rajasthan-patwari-exam-pattern-syllabus-2026-150-questions",
+    site: "rj",
+    seoTitle: "Rajasthan Patwari Exam Pattern & Syllabus 2026: 150 Questions, Marks",
+    seoDescription:
+      "Rajasthan Patwari exam pattern: 150 questions, 300 marks, 3 hours, one-third negative marking, subject-wise marks, syllabus and CET link. Exam date not announced yet.",
+    title: "Rajasthan Patwari Exam Pattern and Syllabus 2026: 150 Questions, Subject-wise Marks and Date Status",
+    titleHi: "राजस्थान पटवारी परीक्षा पैटर्न और सिलेबस 2026: 150 प्रश्न, विषयवार अंक और परीक्षा तिथि",
+    excerpt:
+      "The Rajasthan Patwari paper is reported to have 150 questions for 300 marks in 3 hours with one-third negative marking. The subject-wise split, syllabus, the CET link and where the exam date stands.",
+    category: "EXAM_PATTERN",
+    exams: ["rssb/patwari", "rssb/cet-graduation"],
+    content: `The **Rajasthan Staff Selection Board (RSSB)** Patwari exam is **offline and OMR-based: 150 questions for 300 marks in 3 hours**, with one-third of the marks deducted for each wrong answer. **As of 4 November 2026 the exam date had not been announced** and the number of 2026 posts is not known. Patwari also needs a valid **CET Graduation score**, and that exam is on **16 to 18 January 2027**, so the Patwari notice is expected after it.
+
+## Rajasthan Patwari exam pattern
+
+| Subject | Questions | Marks |
+|---|---|---|
+| General Science, History, Polity and Geography of India; GK and current affairs | 38 | 76 |
+| Geography, History, Culture and Polity of Rajasthan | 30 | 60 |
+| General Hindi and General English | 22 | 44 |
+| Mental ability, reasoning and basic numerical efficiency | 45 | 90 |
+| General Computer | 15 | 30 |
+| **Total** | **150** | **300** |
+
+- Each correct answer carries **2 marks**; each wrong answer costs **one-third of the marks** for that question.
+- Every question has **five options (A to E)**, and the fifth is for a question you do not want to attempt. Mark it instead of leaving the row blank.
+- Candidates get about 10 extra minutes to fill the OMR sheet.
+
+This is the reported pattern. RSSB's new Patwari advertisement may change it, so check it when it is out on rssb.rajasthan.gov.in.
+
+## What the pattern means for your preparation
+
+- **Reasoning and maths is 30% of the paper** (90 marks), and **Rajasthan GK is 20%** (60 marks). Together they are half the paper.
+- **Computer is 15 questions**, more than many students expect. Hardware, operating systems and MS Office are quick marks.
+- Hindi and English are only 22 questions, so a short daily grammar habit is enough.
+
+## Syllabus in brief
+
+- **Rajasthan GK:** history, administration, culture, festivals, freedom movement, geography, rivers, districts and schemes
+- **General Hindi:** sandhi, samas, synonyms, antonyms, idioms
+- **General English:** idioms, synonyms and antonyms, error correction, comprehension
+- **Reasoning:** series, coding-decoding, blood relations, seating arrangement
+- **Maths:** averages, percentage, simple and compound interest, profit and loss
+- **Computer:** hardware, operating systems, MS Office, internet
+
+The full outline is on the [Patwari syllabus page](/rssb/patwari/syllabus) and the figures on the [exam pattern page](/rssb/patwari/exam-pattern).
+
+## Start with the CET
+
+Because the CET Graduation exam comes first, your preparation for it counts twice. See the [CET Graduation exam date, pattern and syllabus](/blog/rajasthan-cet-graduation-2026-exam-date-pattern-syllabus).
+
+## Practise in the Patwari pattern
+
+Our free [Rajasthan Patwari mock test](/tests/rssb-patwari-free-mock-1) follows this split at one third of the length: 50 questions in 60 minutes, 2 marks each, one-third negative marking, with solutions in Hindi and English. Revise district by district with the [Rajasthan GK](/rajasthan) page.
+
+## हिंदी में सार
+
+राजस्थान पटवारी परीक्षा में **150 प्रश्न, 300 अंक और 3 घंटे** का समय होता है; प्रत्येक सही उत्तर के 2 अंक और गलत उत्तर पर एक-तिहाई अंक की कटौती है। विषयवार प्रश्न: सामान्य विज्ञान, इतिहास, राजव्यवस्था, भूगोल व सामान्य ज्ञान 38, राजस्थान का इतिहास, संस्कृति, भूगोल व राजव्यवस्था 30, सामान्य हिंदी व अंग्रेज़ी 22, मानसिक योग्यता, तर्कशक्ति व संख्यात्मक योग्यता 45 और सामान्य कंप्यूटर 15। 2026 की परीक्षा तिथि अभी घोषित नहीं हुई है; इसके लिए CET स्नातक स्तर (16-18 जनवरी 2027) का वैध स्कोर चाहिए।`,
+    faqs: [
+      {
+        q: "What is the Rajasthan Patwari exam date 2026?",
+        a: "Not announced when this post was written (4 November 2026). Patwari needs the CET Graduation score, and that exam is on 16 to 18 January 2027.",
+      },
+      {
+        q: "How many questions are there in the Rajasthan Patwari exam?",
+        a: "150 objective questions for 300 marks in 3 hours, 2 marks each, with one-third of the marks deducted for a wrong answer.",
+      },
+      {
+        q: "Which subject has the most weight in Rajasthan Patwari?",
+        a: "Reasoning, mental ability and basic numerical efficiency has the most questions (45 questions, 90 marks). Rajasthan GK is next, with 30 questions and 60 marks.",
+      },
+    ],
+  },
+
+  {
+    slug: "curaj-lower-division-clerk-recruitment-2026-eligibility-last-date",
+    site: "rj",
+    seoTitle: "CURAJ Lower Division Clerk Recruitment 2026: Eligibility, Last Date",
+    seoDescription:
+      "Central University of Rajasthan Lower Division Clerk 2026: one post, any degree plus typing, fee Rs 1,500, apply online by 10 December. Is there a written test?",
+    title: "CURAJ Lower Division Clerk Recruitment 2026: Eligibility, Fee, Typing Speed, Last Date 10 December and Exam Status",
+    titleHi: "राजस्थान केंद्रीय विश्वविद्यालय LDC भर्ती 2026: पात्रता, शुल्क, अंतिम तिथि 10 दिसंबर",
+    excerpt:
+      "The Central University of Rajasthan has advertised a Lower Division Clerk post. Eligibility, fee, typing speed, the 10 December last date, and what the notice says about a written test.",
+    category: "NOTIFICATION",
+    exams: ["curaj/lower-division-clerk"],
+    content: `The **Central University of Rajasthan (CURAJ)** has advertised a **Lower Division Clerk (LDC)** post in its non-teaching recruitment (Advertisement No. CURAJ/R./F.179/Rectt./2026/7314, dated 22 October 2026). **Apply online by 10 December 2026, 11:59 PM.**
+
+## Vacancy and eligibility
+
+| Item | Detail |
+|---|---|
+| Post | Lower Division Clerk (Post Code C-01) |
+| Vacancy | 1 (EWS category) |
+| Pay level | Level 2 |
+| Qualification | Any bachelor's degree |
+| Typing speed | 35 wpm in English or 30 wpm in Hindi |
+| Age limit | 30 years as on the last date |
+| Fee | Rs 1,500 (UR, EWS, OBC); Rs 750 (SC, ST, PwBD) |
+| Official website | curaj.ac.in |
+
+## Important dates
+
+- **Online application:** by 10 December 2026, 11:59 PM
+- **Hard copy must reach the university:** by 15 December 2026, 5:00 PM (20 December 2026, 5:00 PM for remote regions)
+
+## Is there a written exam?
+
+**Not confirmed.** The notice says the university "may conduct a written test, trade test, computer test or any other test as per the requirement of the post". It gives no pattern, date, marks or negative marking. Typing speed is listed as an eligibility condition. Watch curaj.ac.in for the selection notice before you decide how to prepare.
+
+## How to prepare
+
+If a test is held for a clerk-level post, it usually covers general awareness, reasoning, maths, English and computer. A short daily practice habit is enough for a single-post vacancy. Try the free [CURAJ Lower Division Clerk mock test](/tests/curaj-lower-division-clerk-free-mock-1): 50 questions in 50 minutes on those five subjects, with solutions in Hindi and English. The subjects, length and marking are ours since CURAJ has not published them. See the [LDC exam page](/curaj/lower-division-clerk) for the syllabus outline.
+
+More openings are in our [Rajasthan government jobs list for November 2026](/blog/rajasthan-government-jobs-november-2026-new-vacancies-list).
+
+## हिंदी में सार
+
+राजस्थान केंद्रीय विश्वविद्यालय ने **लोअर डिवीजन क्लर्क (LDC)** का **1 पद** (EWS) निकाला है। किसी भी विषय में स्नातक और टाइपिंग गति अंग्रेज़ी में 35 या हिंदी में 30 शब्द प्रति मिनट चाहिए। ऑनलाइन आवेदन की अंतिम तिथि **10 दिसंबर 2026** है और हार्ड कॉपी 15 दिसंबर 2026 तक पहुँचनी चाहिए। लिखित परीक्षा की पुष्टि नहीं है; विश्वविद्यालय लिखित, ट्रेड या कंप्यूटर टेस्ट ले सकता है।`,
+    faqs: [
+      {
+        q: "What is the last date for CURAJ Lower Division Clerk 2026?",
+        a: "10 December 2026, 11:59 PM for the online application. The hard copy must reach the university by 15 December 2026, 5:00 PM.",
+      },
+      {
+        q: "What is the qualification for the CURAJ Lower Division Clerk post?",
+        a: "Any bachelor's degree, and a typing speed of 35 words per minute in English or 30 words per minute in Hindi. The age limit is 30 years as on the last date.",
+      },
+      {
+        q: "What is the application fee for the CURAJ LDC post?",
+        a: "Rs 1,500 for UR, EWS and OBC candidates and Rs 750 for SC, ST and PwBD candidates.",
+      },
+    ],
+  },
+
+  {
+    slug: "rrc-north-western-railway-act-apprentice-2026-2008-posts-apply-merit",
+    site: "rj",
+    seoTitle: "RRC NWR Act Apprentice 2026: 2,008 Posts, Merit List, Last Date 22 Nov",
+    seoDescription:
+      "RRC North Western Railway Act Apprentice 2026: 2,008 posts, Class 10 plus ITI, age 15 to 24, merit list from marks (no exam), fee Rs 100, apply by 22 November 2026.",
+    title: "RRC North Western Railway Act Apprentice 2026: 2,008 Posts, Eligibility, Merit List and Last Date 22 November",
+    titleHi: "RRC उत्तर पश्चिम रेलवे एक्ट अप्रेंटिस भर्ती 2026: 2,008 पद, पात्रता, मेरिट लिस्ट, अंतिम तिथि 22 नवंबर",
+    excerpt:
+      "RRC North Western Railway (Jaipur) has invited applications for Act Apprentice posts. Eligibility, age, fee, how the merit list is made (there is no exam) and the 22 November 2026 last date.",
+    category: "NOTIFICATION",
+    exams: [],
+    content: `**RRC North Western Railway (RRC Jaipur)** has invited applications for **Act Apprentice** training for 2026-27 (Advertisement No. 04/2026). The notification lists **2,008 slots** across eight units: the DRM offices at Ajmer, Bikaner, Jaipur and Jodhpur, and the carriage and loco workshops at Ajmer, Bikaner and Jodhpur. Job-alert sites note that the unit-wise numbers add up to more than 2,008, and the notice does not explain the difference, so check the official list for your trade and unit. **Apply online at rrcjaipur.in by 22 November 2026.**
+
+**There is no written exam.** Selection is by a **merit list**.
+
+## Eligibility
+
+| Item | Detail |
+|---|---|
+| Education | Class 10 with at least 50% aggregate, plus an NCVT/SCVT National Trade Certificate (ITI) |
+| Age | 15 to 24 years as on 22 November 2026 (relaxation for reserved categories) |
+| Fee | Rs 100; nil for SC, ST, PwBD and women |
+| Last date | 22 November 2026, 11:59 PM |
+| Apply at | rrcjaipur.in |
+
+Trades listed include Electrician, Welder, Fitter, Carpenter, Diesel Mechanic, Electronics Mechanic, Computer Operator and Programming Assistant, Stenographer (English and Hindi) and Draughtsman.
+
+## How the selection works
+
+1. **Merit list:** the average of your Class 10 percentage and your ITI percentage, made unit-wise and trade-wise.
+2. **Document verification** and a **medical exam** at the chosen unit.
+3. A **Contract of Apprenticeship** is signed before training. Training under the Apprentices Act gives **no right to a railway job**, and the stipend follows the rules in force.
+
+## What to do in the next nine days
+
+- Keep your Class 10 and ITI marksheets and certificates ready, because they are checked at document verification.
+- Check the vacancy for your trade and unit in the notification, since the merit list is made trade by trade.
+- Apply only on the official site, and confirm the details in the notification PDF.
+
+Looking for jobs that do have an exam? See the [Rajasthan government jobs list for November 2026](/blog/rajasthan-government-jobs-november-2026-new-vacancies-list) and the [RSSB exam calendar](/blog/rssb-exam-calendar-2026-revised-november-february).
+
+## हिंदी में सार
+
+उत्तर पश्चिम रेलवे (RRC जयपुर) ने **2026-27 के लिए एक्ट अप्रेंटिस के 2,008 पदों** पर आवेदन माँगे हैं। 10वीं (कम से कम 50%) और ITI (NCVT/SCVT) चाहिए, आयु 15 से 24 वर्ष (22 नवंबर 2026 तक)। शुल्क 100 रुपये है (SC/ST/दिव्यांग/महिला के लिए शून्य)। **कोई लिखित परीक्षा नहीं** है; 10वीं और ITI के प्रतिशत के औसत से मेरिट लिस्ट बनती है। ऑनलाइन आवेदन की अंतिम तिथि **22 नवंबर 2026** है।`,
+    faqs: [
+      {
+        q: "Is there an exam for the RRC North Western Railway Act Apprentice?",
+        a: "No. Selection is a merit list made from the average of the Class 10 and ITI percentages, followed by document verification and a medical exam.",
+      },
+      {
+        q: "What is the last date for the NWR Act Apprentice 2026?",
+        a: "22 November 2026, 11:59 PM, on rrcjaipur.in.",
+      },
+      {
+        q: "Does an Act Apprentice get a railway job after training?",
+        a: "No. Apprenticeship under the Apprentices Act is training on a contract, and the notice says it gives no right to absorption or employment.",
+      },
+    ],
+  },
 ];
