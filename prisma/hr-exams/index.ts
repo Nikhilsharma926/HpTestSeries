@@ -18,6 +18,7 @@ import { POLICE_PAID_TESTS } from "../pb-police";
 import { POLICE_TESTS } from "../police";
 import type { Diff, PatwariQuestion, TestDef } from "../patwari/types";
 import { questionTextHash } from "../../src/modules/content/text-hash";
+import { HR_MORE_SPECS } from "./more";
 
 const hash = (x: PatwariQuestion) => questionTextHash(x.en[0]);
 type Pick = (x: PatwariQuestion) => boolean;
@@ -292,6 +293,33 @@ export const COURT_STENO_FREE_TEST = mock(
   "The 2026 Nuh notice is reported to select on skill tests (English shorthand at 80 wpm and computer transcription at 20 wpm) and does not publish an MCQ paper, so this test only practises the English, computer and general-awareness knowledge around the skill tests. The shorthand and transcription tests are not covered.",
 );
 
+// ───────── The other recruitments on the FreeJobAlert Haryana page (prisma/hr-exams/more.ts): one 20-question general-aptitude mock each ─────────
+/** Reasoning, maths, English and either computer or general awareness, 5 questions each. Claimed last, so no earlier test moves. */
+export const HR_MORE_TESTS: Record<string, TestDef> = Object.fromEntries(
+  HR_MORE_SPECS.map((s) => {
+    const last: Omit<Sec, "count"> = s.includeComputer ? COMPUTER : GA;
+    const secs: Sec[] = [{ ...REASONING, count: 5 }, { ...MATHS, count: 5 }, { ...ENGLISH, count: 5 }, { ...last, count: 5 }];
+    const qs = [
+      ...claim(0, 5, GENERAL_POOL, reasoning, "easy", `${s.name} Reasoning`),
+      ...claim(1, 5, GENERAL_POOL, quant, "easy", `${s.name} Maths`),
+      ...claim(2, 5, GENERAL_POOL, english, "easy", `${s.name} English`),
+      ...claim(3, 5, GENERAL_POOL, s.includeComputer ? computer : gk, "easy", `${s.name} ${last.name}`),
+    ];
+    const test = mock(
+      s.mockSlug,
+      `${s.name} Free Mock Test 1`,
+      `${s.nameHi} फ़्री मॉक टेस्ट 1`,
+      s.minutes,
+      0,
+      `${s.name} recruitment (general aptitude)`,
+      secs,
+      qs,
+      `${s.org} advertised this post in November 2026 and selection is reported as ${s.selection}. No written paper has been confirmed, so this is general-aptitude practice and its subjects, length and marking are ours. ${s.notCovered}`,
+    );
+    return [`${s.bodySlug}/${s.examSlug}`, test];
+  }),
+);
+
 export const HR_EXAM_TESTS = {
   police: [POLICE_FREE_TEST],
   hcs: [HCS_FREE_TEST],
@@ -299,5 +327,6 @@ export const HR_EXAM_TESTS = {
   svsu: [SVSU_FREE_TEST],
   hartron: [HARTRON_FREE_TEST],
   courtSteno: [COURT_STENO_FREE_TEST],
+  more: Object.values(HR_MORE_TESTS),
 };
 export const ALL_HR_EXAM_TESTS: TestDef[] = Object.values(HR_EXAM_TESTS).flat();

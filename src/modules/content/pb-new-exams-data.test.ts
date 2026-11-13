@@ -8,11 +8,15 @@ import { questionTextHash } from "./text-hash";
 const topics = new Set(taxonomy.flatMap((s) => s.topics.map(([slug]) => `${s.slug}/${slug}`)));
 const COUNTS: Record<string, { total: number; sections: number[]; minutes: number; marksCorrect: number; marksWrong: number }> = {
   "psssb-driver-free-mock-1": { total: 50, sections: [5, 3, 5, 7, 30], minutes: 60, marksCorrect: 1, marksWrong: 0.25 },
+  "psssb-driver-free-mock-2": { total: 50, sections: [5, 3, 5, 7, 30], minutes: 60, marksCorrect: 1, marksWrong: 0.25 },
   "erb-punjab-ett-free-mock-1": { total: 100, sections: [20, 10, 10, 20, 20, 20], minutes: 100, marksCorrect: 2, marksWrong: 0 },
+  "erb-punjab-ett-free-mock-2": { total: 100, sections: [20, 10, 10, 20, 20, 20], minutes: 100, marksCorrect: 2, marksWrong: 0 },
+  "psssb-group-d-free-mock-2": { total: 100, sections: [25, 25, 20, 20, 10], minutes: 100, marksCorrect: 1, marksWrong: 0.25 },
+  "psssb-clerk-free-mock-2": { total: 100, sections: [25, 20, 20, 15, 10, 10], minutes: 100, marksCorrect: 1, marksWrong: 0.25 },
 };
 
-describe("Punjab Driver and ETT free mocks", () => {
-  it("covers exactly the two planned tests", () => {
+describe("Punjab Driver, ETT, Group D and Clerk second free mocks", () => {
+  it("covers exactly the planned tests", () => {
     expect(ALL_PB_NEW_EXAM_TESTS.map((t) => t.slug).sort()).toEqual(Object.keys(COUNTS).sort());
   });
 

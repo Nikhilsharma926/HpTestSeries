@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { ALL_HR_EXAM_TESTS } from "../../../prisma/hr-exams";
+import { HR_MORE_SPECS } from "../../../prisma/hr-exams/more";
 import { balanceAnswers } from "../../../prisma/patwari/types";
 import { taxonomy } from "../../../prisma/taxonomy";
 import { questionTextHash } from "./text-hash";
@@ -12,10 +13,11 @@ const COUNTS: Record<string, { total: number; sections: number[]; minutes: numbe
   "svsu-assistant-free-mock-1": { total: 50, sections: [15, 10, 10, 10, 5], minutes: 50, marksWrong: 0 },
   "hartron-deo-free-mock-1": { total: 50, sections: [10, 15, 10, 15], minutes: 60, marksWrong: 0 },
   "haryana-court-steno-free-mock-1": { total: 40, sections: [15, 15, 10], minutes: 40, marksWrong: 0 },
+  ...Object.fromEntries(HR_MORE_SPECS.map((s) => [s.mockSlug, { total: 20, sections: [5, 5, 5, 5], minutes: s.minutes, marksWrong: 0 }])),
 };
 
 describe("Haryana free mocks (Police, HCS, HTET, SVSU, HARTRON, Court Steno)", () => {
-  it("covers exactly the six planned tests", () => {
+  it("covers exactly the planned tests", () => {
     expect(ALL_HR_EXAM_TESTS.map((t) => t.slug).sort()).toEqual(Object.keys(COUNTS).sort());
   });
 

@@ -1,4 +1,5 @@
 import { hr } from "../../src/sites/hr";
+import { HARYANA_EXAM_POSTS } from "./haryana-exam-posts";
 import { HARYANA_JOBS_POSTS } from "./haryana-jobs-posts";
 import type { PostSeed } from "./types";
 
@@ -357,4 +358,5 @@ ${MOCK_CTA}`,
     ],
   },
   ...HARYANA_JOBS_POSTS,
+  ...HARYANA_EXAM_POSTS,
 ];

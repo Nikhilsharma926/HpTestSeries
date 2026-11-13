@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { ALL_RJ_EXAM_TESTS } from "../../../prisma/rj-exams";
+import { RJ_JOBS, jobMockSlug } from "../../../prisma/rj-exams/jobs";
 import { RAJASTHAN_PATWARI_GK } from "../../../prisma/rajasthan/patwari-gk";
 import { rajasthanFreeMock } from "../../../prisma/rajasthan/free-mock";
 import { COMMON_FREE_QUESTIONS } from "../../../prisma/seed-demo";
@@ -13,9 +14,12 @@ const COUNTS: Record<string, { total: number; sections: number[]; minutes: numbe
   "rssb-patwari-free-mock-1": { total: 50, sections: [13, 10, 7, 15, 5], minutes: 60, marksCorrect: 2, marksWrong: 0.67 },
   "curaj-lower-division-clerk-free-mock-1": { total: 50, sections: [15, 10, 10, 10, 5], minutes: 50, marksCorrect: 1, marksWrong: 0 },
 };
+// The other recruitments (prisma/rj-exams/jobs.ts): practice papers with no negative marking.
+for (const j of RJ_JOBS)
+  COUNTS[jobMockSlug(j)] = { total: j.sections.reduce((n, s) => n + s.count, 0), sections: j.sections.map((s) => s.count), minutes: j.minutes, marksCorrect: 1, marksWrong: 0 };
 
-describe("Rajasthan free mocks (Protection Officer, Patwari, CURAJ LDC)", () => {
-  it("covers exactly the three planned tests", () => {
+describe("Rajasthan free mocks (Protection Officer, Patwari, CURAJ LDC and the other recruitments)", () => {
+  it("covers exactly the planned tests", () => {
     expect(ALL_RJ_EXAM_TESTS.map((t) => t.slug).sort()).toEqual(Object.keys(COUNTS).sort());
   });
 

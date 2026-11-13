@@ -9,6 +9,7 @@ import { ALL_PB_EXAM_TESTS } from "../../../prisma/pb-exams";
 import { ALL_PB_NEW_EXAM_TESTS } from "../../../prisma/pb-exams/new-exams";
 import { ALL_RJ_EXAM_TESTS } from "../../../prisma/rj-exams";
 import { PB_PATWARI_TESTS } from "../../../prisma/pb-patwari";
+import { PB_POLICE_TESTS } from "../../../prisma/pb-police";
 import { examContent, posts } from "../../../prisma/seed-content";
 import { HP_GK_FREE_MOCK_SLUGS } from "../../../prisma/seed-hp-gk-mocks";
 import { HPAS_BANK_TEST_SLUGS } from "../../../prisma/seed-hpas-bank";
@@ -28,6 +29,7 @@ const testSlugs = new Set([
   ...PATWARI_TESTS.map((t) => t.slug),
   ...COURT_CLERK_TESTS.map((t) => t.slug),
   ...PB_PATWARI_TESTS.map((t) => t.slug),
+  ...PB_POLICE_TESTS.map((t) => t.slug),
   ...ALL_PB_EXAM_TESTS.map((t) => t.slug),
   ...ALL_PB_NEW_EXAM_TESTS.map((t) => t.slug),
   ...ALL_HR_EXAM_TESTS.map((t) => t.slug),

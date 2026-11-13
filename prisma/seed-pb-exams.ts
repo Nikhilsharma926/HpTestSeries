@@ -20,7 +20,7 @@ const CONFIGS: Cfg[] = [
     name: "PSSSB Group D",
     nameHi: "पीएसएसएसबी ग्रुप डी",
     description: "Mocks for the PSSSB Group D written exam: Punjab GK, General Knowledge, Reasoning, Maths and English with a quarter-mark negative.",
-    tests: PB_EXAM_TESTS.groupD,
+    tests: [...PB_EXAM_TESTS.groupD, ...PB_NEW_EXAM_TESTS.groupD],
   },
   {
     key: "psssb-clerk",
@@ -29,7 +29,7 @@ const CONFIGS: Cfg[] = [
     name: "PSSSB Clerk",
     nameHi: "पीएसएसएसबी क्लर्क",
     description: "Mocks for the PSSSB Clerk written exam (Part B): Punjab history & culture, General Knowledge, Reasoning, English, Punjabi and ICT with a quarter-mark negative.",
-    tests: PB_EXAM_TESTS.clerk,
+    tests: [...PB_EXAM_TESTS.clerk, ...PB_NEW_EXAM_TESTS.clerk],
   },
   {
     key: "psssb-je-civil",

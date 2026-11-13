@@ -848,6 +848,159 @@ Paper me **physical education aur sports, anatomy aur physiology, yoga, first ai
     ],
   },
 
+  "hprca/sanskrit-teacher": {
+    seo: {
+      title: "HPRCA Sanskrit Teacher Mock Test {year} — Free Online Test",
+      description: "Free HPRCA Sanskrit Teacher mock test: sandhi, samas, karak, literature, chhand, pedagogy and Himachal GK in real CBT format, with Hindi & English solutions.",
+    },
+    description: `**Sanskrit Teacher** posts in Himachal Pradesh government schools are filled by the **Himachal Pradesh Rajya Chayan Aayog (HPRCA), Hamirpur**. In the November 2026 notification (Advt No. 14/2026) HPRCA advertised **187 Sanskrit Teacher posts (Post Code 26055)** among 2,423 subject-teacher posts. As listed on the advertisement, the qualification is a Master's degree in Sanskrit, a **B.Ed.** and a qualifying **TET**; the exact marks and conditions are in the official advertisement.
+
+As reported, selection is through a **computer-based test or written screening test of 120 MCQs (120 marks, 90 minutes)**, followed by merit ranking and document verification. Negative marking is not specified, so check hprca.hp.gov.in before you rely on any figure here. Age limit (18 to 45 years as on 1 January 2026) and the engagement terms change with each notification.
+
+Paper me **Sanskrit vyakaran (sandhi, samas, karak, shabd aur dhatu roop, pratyay), sahitya, chhand-alankar aur Sanskrit shikshan vidhi** ke saath **pedagogy, Himachal GK, current affairs, reasoning, English aur Hindi** aate hain. Vyakaran ke questions sabse scoring hain, kyunki unke rules fixed hain.
+
+**How to prepare:** learn the sandhi and samas rules with examples, practise shabd and dhatu roop tables, revise the major authors and works, and read the teaching methods. Take the free [HPRCA Sanskrit Teacher mock](${free("hprca-sanskrit-teacher-free-mock-1")}) to see the CBT format, then add one timed mock a week.`,
+    syllabus: `The detailed syllabus is published with the HPRCA notification. Usual areas for Sanskrit Teacher:
+
+### Sanskrit grammar
+- Sandhi (swar, vyanjan, visarga), samas and its types
+- Karak and vibhakti, shabd roop and dhatu roop
+- Pratyay (krit and taddhit), upsarg, vachya and lakar
+
+### Literature and teaching
+- Major authors and works: Kalidasa, Bhavabhuti, Bana, Panini and the epics
+- Chhand and alankar
+- Translation (anuvad) and Sanskrit teaching methods
+
+### Pedagogy and general awareness
+- Child development, learning theories and inclusive education
+- Himachal Pradesh GK and current affairs, reasoning, English and Hindi`,
+    faqs: [
+      {
+        q: "HPRCA Sanskrit Teacher ke liye qualification kya hai?",
+        a: "Reports ke mutabik Sanskrit me Master's degree, B.Ed. aur qualifying TET, jaisa advertisement me diya gaya ho. Age limit 18 se 45 saal (1 January 2026 tak). Official notification hprca.hp.gov.in par dekhein.",
+      },
+      {
+        q: "How many Sanskrit Teacher posts did HPRCA advertise in November 2026?",
+        a: "Advt No. 14/2026 lists 187 Sanskrit Teacher posts (Post Code 26055) out of 2,423 subject-teacher posts, as reported. The number is tentative, so confirm it in the official advertisement.",
+      },
+      {
+        q: "What is the HPRCA Sanskrit Teacher exam pattern?",
+        a: "As reported, a computer-based or written screening test of 120 MCQs for 120 marks in 90 minutes. Negative marking is not specified in the notification, so check the official advertisement.",
+      },
+      {
+        q: "Sanskrit Teacher ka syllabus kya hai?",
+        a: "Sandhi, samas, karak, shabd aur dhatu roop, pratyay, sahitya, chhand-alankar, shikshan vidhi, pedagogy, Himachal GK, current affairs, reasoning, English aur Hindi.",
+      },
+      {
+        q: "Is there a free mock test for HPRCA Sanskrit Teacher?",
+        a: "Yes. The free 15-question mock covers Sanskrit grammar, literature and chhand, pedagogy and Himachal GK, with Hindi and English solutions.",
+      },
+    ],
+  },
+
+  "hprca/music-teacher": {
+    seo: {
+      title: "HPRCA Music Teacher Mock Test {year} — Free Online Test",
+      description: "Free HPRCA Music Teacher mock test: swara, raga, taal, instruments, music history, pedagogy and Himachal GK in real CBT format, with Hindi & English solutions.",
+    },
+    description: `**Music Teacher** posts in Himachal Pradesh government schools are filled by the **Himachal Pradesh Rajya Chayan Aayog (HPRCA), Hamirpur**. In the November 2026 notification (Advt No. 14/2026) HPRCA advertised **95 Music Teacher posts (Post Code 26057)** among 2,423 subject-teacher posts. As listed on the advertisement, the qualification is a Master's degree in vocal or instrumental music, a **B.Ed.** and a qualifying **TET**; the exact marks and conditions are in the official advertisement.
+
+As reported, selection is through a **computer-based test or written screening test of 120 MCQs (120 marks, 90 minutes)**, followed by merit ranking and document verification. Negative marking is not specified, so check hprca.hp.gov.in before you rely on any figure here. Age limit (18 to 45 years as on 1 January 2026) and the engagement terms change with each notification.
+
+Paper me **swara, shruti, raga aur thaat, taal aur laya, vadya (tat, sushir, avanaddha, ghan), sangeet ka itihas aur pramukh kalakar** ke saath **pedagogy, Himachal GK, current affairs, reasoning, English aur Hindi** aate hain. Theory ke seedhe facts yaad hone par marks pakke hote hain.
+
+**How to prepare:** revise the swara and shruti system, the ten thaats, raga timings and the taals with their matras, then the four classes of instruments and the main musicians and texts. Take the free [HPRCA Music Teacher mock](${free("hprca-music-teacher-free-mock-1")}) to see the CBT format, then add one timed mock a week.`,
+    syllabus: `The detailed syllabus is published with the HPRCA notification. Usual areas for Music Teacher:
+
+### Theory of music
+- Swara, shruti, saptak, thaat and raga (vadi, samvadi, time theory)
+- Taal and laya: matras, vibhag, tali and khali
+- Notation systems (Bhatkhande and Vishnu Digambar)
+
+### Instruments and history
+- Classification of instruments: tat, sushir, avanaddha, ghan
+- Ancient texts such as Natya Shastra and Sangeet Ratnakar
+- Famous musicians and gharanas; folk music of Himachal Pradesh
+
+### Pedagogy and general awareness
+- Child development, learning theories and assessment
+- Himachal Pradesh GK and current affairs, reasoning, English and Hindi`,
+    faqs: [
+      {
+        q: "HPRCA Music Teacher ke liye qualification kya hai?",
+        a: "Reports ke mutabik vocal ya instrumental music me Master's degree, B.Ed. aur qualifying TET, jaisa advertisement me diya gaya ho. Age limit 18 se 45 saal (1 January 2026 tak). Official notification hprca.hp.gov.in par dekhein.",
+      },
+      {
+        q: "How many Music Teacher posts did HPRCA advertise in November 2026?",
+        a: "Advt No. 14/2026 lists 95 Music Teacher posts (Post Code 26057) out of 2,423 subject-teacher posts, as reported. The number is tentative, so confirm it in the official advertisement.",
+      },
+      {
+        q: "What is the HPRCA Music Teacher exam pattern?",
+        a: "As reported, a computer-based or written screening test of 120 MCQs for 120 marks in 90 minutes. Negative marking is not specified in the notification, so check the official advertisement.",
+      },
+      {
+        q: "Music Teacher ka syllabus kya hai?",
+        a: "Swara, shruti, raga, thaat, taal, vadya, sangeet ka itihas, pedagogy, Himachal GK, current affairs, reasoning, English aur Hindi.",
+      },
+      {
+        q: "Is there a free mock test for HPRCA Music Teacher?",
+        a: "Yes. The free 15-question mock covers swara, raga and theory, instruments, taal and history, pedagogy and Himachal GK, with Hindi and English solutions.",
+      },
+    ],
+  },
+
+  "hprca/fine-arts-teacher": {
+    seo: {
+      title: "HPRCA Fine Arts Teacher Mock Test {year} — Free Online Test",
+      description: "Free HPRCA Fine Arts Teacher mock test: Indian art history, painting schools, colour, techniques, pedagogy and Himachal GK in CBT format, with Hindi & English solutions.",
+    },
+    description: `**Fine Arts Teacher** posts in Himachal Pradesh government schools are filled by the **Himachal Pradesh Rajya Chayan Aayog (HPRCA), Hamirpur**. In the November 2026 notification (Advt No. 14/2026) HPRCA advertised **172 Fine Arts Teacher posts (Post Code 26060)** among 2,423 subject-teacher posts. As listed on the advertisement, the qualification is a Master's degree in fine or visual arts, or a recognised painting or fine arts diploma after higher secondary, with course duration and marks as specified in the official advertisement.
+
+As reported, selection is through a **computer-based test or written screening test of 120 MCQs (120 marks, 90 minutes)**, followed by merit ranking and document verification. Negative marking is not specified, so check hprca.hp.gov.in before you rely on any figure here. Age limit (18 to 45 years as on 1 January 2026) and the engagement terms change with each notification.
+
+Paper me **Bharatiya kala ka itihas, painting schools aur kalakar, rang, design ke principles, medium aur techniques** ke saath **pedagogy, Himachal GK, current affairs, reasoning, English aur Hindi** aate hain. Himachal ki Pahari aur Kangra painting, Chamba Rumal jaisi kalayen general section me bhi kaam aati hain.
+
+**How to prepare:** revise the prehistoric, Indus, Mauryan to Gupta art, the miniature painting schools and their patrons, the Bengal school and modern artists, then colour theory and techniques. Take the free [HPRCA Fine Arts Teacher mock](${free("hprca-fine-arts-teacher-free-mock-1")}) to see the CBT format, then add one timed mock a week.`,
+    syllabus: `The detailed syllabus is published with the HPRCA notification. Usual areas for Fine Arts Teacher:
+
+### History of art
+- Prehistoric and Indus Valley art; Mauryan, Gupta and temple sculpture; Ajanta and other murals
+- Miniature schools: Mughal, Rajasthani, Pahari (Basohli, Guler, Kangra)
+- Bengal school, modern Indian artists and art movements
+
+### Techniques and theory
+- Elements and principles of design; colour wheel, primary, secondary and complementary colours
+- Mediums: oil, water colour, tempera, fresco, pastel; printmaking, sculpture and craft
+- Perspective, composition and light and shade
+
+### Pedagogy and general awareness
+- Child development, learning theories and art education
+- Himachal Pradesh arts and crafts (Kangra painting, Chamba Rumal), GK and current affairs, reasoning, English and Hindi`,
+    faqs: [
+      {
+        q: "HPRCA Fine Arts Teacher ke liye qualification kya hai?",
+        a: "Reports ke mutabik Fine Arts/Visual Arts me Master's degree, ya higher secondary ke baad recognised painting/fine arts diploma, jaisa advertisement me diya gaya ho. Age limit 18 se 45 saal (1 January 2026 tak). Official notification hprca.hp.gov.in par dekhein.",
+      },
+      {
+        q: "How many Fine Arts Teacher posts did HPRCA advertise in November 2026?",
+        a: "Advt No. 14/2026 lists 172 Fine Arts Teacher posts (Post Code 26060) out of 2,423 subject-teacher posts, as reported. The number is tentative, so confirm it in the official advertisement.",
+      },
+      {
+        q: "What is the HPRCA Fine Arts Teacher exam pattern?",
+        a: "As reported, a computer-based or written screening test of 120 MCQs for 120 marks in 90 minutes. Negative marking is not specified in the notification, so check the official advertisement.",
+      },
+      {
+        q: "Fine Arts Teacher ka syllabus kya hai?",
+        a: "Bharatiya kala ka itihas, painting schools, rang aur design, techniques, pedagogy, Himachal GK, current affairs, reasoning, English aur Hindi.",
+      },
+      {
+        q: "Is there a free mock test for HPRCA Fine Arts Teacher?",
+        a: "Yes. The free 15-question mock covers history of Indian art, techniques and colour, pedagogy and Himachal GK, with Hindi and English solutions.",
+      },
+    ],
+  },
+
   "hprca/computer-teacher": {
     seo: {
       title: "HPRCA Computer Teacher Mock Test {year} — Free Online Test",

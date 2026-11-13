@@ -11,6 +11,9 @@ import { kccbJccbClerkMock1 } from "./kccb-jccb-clerk";
 import { labAssistantMock1 } from "./lab-assistant";
 import { naibTehsildarMock1 } from "./naib-tehsildar";
 import { computerTeacherMock1 } from "./computer-teacher";
+import { fineArtsTeacherMock1 } from "./fine-arts-teacher";
+import { musicTeacherMock1 } from "./music-teacher";
+import { sanskritTeacherMock1 } from "./sanskrit-teacher";
 import { physicalEducationTeacherMock1 } from "./physical-education-teacher";
 import { adoMock1 } from "./ado";
 import { asstProfMock1 } from "./asst-prof";
@@ -588,6 +591,54 @@ const TESTS: UpcomingFreeTest[] = [
       { name: "Himachal GK", nameHi: "हिमाचल सामान्य ज्ञान" },
     ],
     questions: computerTeacherMock1,
+  },
+  {
+    bodySlug: "hprca",
+    examSlug: "sanskrit-teacher",
+    slug: "hprca-sanskrit-teacher-free-mock-1",
+    title: "HPRCA Sanskrit Teacher Free Mock Test 1",
+    titleHi: "एचपीआरसीए संस्कृत शिक्षक फ्री मॉक टेस्ट 1",
+    durationSec: 15 * 60,
+    instructions: instructions("HPRCA Sanskrit Teacher", "Sanskrit Grammar (6), Literature, Chhand & Teaching (4), Child Development & Pedagogy (2), Himachal GK (3)"),
+    sections: [
+      { name: "Sanskrit Grammar", nameHi: "संस्कृत व्याकरण" },
+      { name: "Literature, Chhand & Teaching", nameHi: "साहित्य, छन्द एवं शिक्षण" },
+      { name: "Child Development & Pedagogy", nameHi: "बाल विकास एवं शिक्षाशास्त्र" },
+      { name: "Himachal GK", nameHi: "हिमाचल सामान्य ज्ञान" },
+    ],
+    questions: sanskritTeacherMock1,
+  },
+  {
+    bodySlug: "hprca",
+    examSlug: "music-teacher",
+    slug: "hprca-music-teacher-free-mock-1",
+    title: "HPRCA Music Teacher Free Mock Test 1",
+    titleHi: "एचपीआरसीए संगीत शिक्षक फ्री मॉक टेस्ट 1",
+    durationSec: 15 * 60,
+    instructions: instructions("HPRCA Music Teacher", "Swara, Raga & Theory (6), Instruments, Taal & History (4), Child Development & Pedagogy (2), Himachal GK (3)"),
+    sections: [
+      { name: "Swara, Raga & Theory", nameHi: "स्वर, राग एवं सिद्धांत" },
+      { name: "Instruments, Taal & History", nameHi: "वाद्य, ताल एवं इतिहास" },
+      { name: "Child Development & Pedagogy", nameHi: "बाल विकास एवं शिक्षाशास्त्र" },
+      { name: "Himachal GK", nameHi: "हिमाचल सामान्य ज्ञान" },
+    ],
+    questions: musicTeacherMock1,
+  },
+  {
+    bodySlug: "hprca",
+    examSlug: "fine-arts-teacher",
+    slug: "hprca-fine-arts-teacher-free-mock-1",
+    title: "HPRCA Fine Arts Teacher Free Mock Test 1",
+    titleHi: "एचपीआरसीए ललित कला शिक्षक फ्री मॉक टेस्ट 1",
+    durationSec: 15 * 60,
+    instructions: instructions("HPRCA Fine Arts Teacher", "History of Indian Art (6), Techniques & Colour (4), Child Development & Pedagogy (2), Himachal GK (3)"),
+    sections: [
+      { name: "History of Indian Art", nameHi: "भारतीय कला का इतिहास" },
+      { name: "Techniques & Colour", nameHi: "तकनीक एवं रंग" },
+      { name: "Child Development & Pedagogy", nameHi: "बाल विकास एवं शिक्षाशास्त्र" },
+      { name: "Himachal GK", nameHi: "हिमाचल सामान्य ज्ञान" },
+    ],
+    questions: fineArtsTeacherMock1,
   },
 ];
 

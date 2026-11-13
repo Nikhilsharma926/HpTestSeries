@@ -3,7 +3,9 @@
 // ⚠ Verify every body/exam/stage against the current official notifications before launch —
 // recruiting bodies for some posts have changed (e.g. HPSSC → HPRCA).
 
-export type StageSeed = { slug: string; name: string; nameHi?: string };
+import { HR_MORE_BODIES } from "./hr-exams/more";
+
+export type StageSeed ={ slug: string; name: string; nameHi?: string };
 /** `isActive: false` seeds the exam hidden on every site until its pattern and first mocks exist (publish it in /admin/exams). */
 export type ExamSeed = { slug: string; name: string; nameHi?: string; isActive?: boolean; stages?: StageSeed[] };
 /** `sites`: site codes that show the body (src/sites); "*" = national, every site. Default ["hp"]. `passExcluded`: state Passes don't open its tests. */
@@ -73,6 +75,9 @@ export const catalogue: BodySeed[] = [
       { slug: "lab-assistant", name: "Lab Assistant", nameHi: "लैब असिस्टेंट" },
       { slug: "physical-education-teacher", name: "Physical Education Teacher", nameHi: "शारीरिक शिक्षा शिक्षक" },
       { slug: "computer-teacher", name: "Computer Teacher", nameHi: "कंप्यूटर शिक्षक" },
+      { slug: "sanskrit-teacher", name: "Sanskrit Teacher", nameHi: "संस्कृत शिक्षक" },
+      { slug: "music-teacher", name: "Music Teacher", nameHi: "संगीत शिक्षक" },
+      { slug: "fine-arts-teacher", name: "Fine Arts Teacher", nameHi: "ललित कला शिक्षक" },
     ],
   },
   {
@@ -272,8 +277,13 @@ export const catalogue: BodySeed[] = [
     name: "Shri Vishwakarma Skill University",
     nameHi: "श्री विश्वकर्मा कौशल विश्वविद्यालय",
     sites: ["hr"],
-    exams: [{ slug: "assistant-steno-typist", name: "SVSU Assistant & Steno-typist", nameHi: "एसवीएसयू असिस्टेंट एवं स्टेनो-टाइपिस्ट" }],
+    exams: [
+      { slug: "assistant-steno-typist", name: "SVSU Assistant & Steno-typist", nameHi: "एसवीएसयू असिस्टेंट एवं स्टेनो-टाइपिस्ट" },
+      { slug: "skill-instructor", name: "SVSU Skill Instructor", nameHi: "एसवीएसयू स्किल इंस्ट्रक्टर" },
+    ],
   },
+  // Bodies of the other recruitments on the FreeJobAlert Haryana page (13 November 2026): RITES, CCS HAU, RECPDCL, WAPCOS, NHPC, NPCC, BBMB, IIIT Sonepat.
+  ...HR_MORE_BODIES,
   {
     // Added 13 November 2026 from the FreeJobAlert Haryana page: the 110-post HARTRON Data Entry Operator notice (written test + typing).
     slug: "hartron",
@@ -323,16 +333,150 @@ export const catalogue: BodySeed[] = [
       { slug: "protection-officer", name: "RPSC Protection Officer", nameHi: "आरपीएससी संरक्षण अधिकारी" },
     ],
   },
-  // Central University of Rajasthan (Bandarsindri, Ajmer). Added 13 November 2026 from FreeJobAlert's Rajasthan page: of the
-  // 24 entries there, its Lower Division Clerk notice is the only one that may include a written test; the rest are interview,
-  // walk-in, contract or merit-list recruitments with no MCQ paper to practise.
+  // Central University of Rajasthan (Bandarsindri, Ajmer) and the other recruitments on FreeJobAlert's Rajasthan page
+  // (13 November 2026). Only the CURAJ Lower Division Clerk notice says a written test may be held; the rest are interview,
+  // walk-in, contract or merit-list posts, so their pages and mocks are labelled practice (prisma/rj-exams/jobs.ts).
   {
     slug: "curaj",
     name: "Central University of Rajasthan",
     nameHi: "राजस्थान केंद्रीय विश्वविद्यालय",
     sites: ["rj"],
-    exams: [{ slug: "lower-division-clerk", name: "CURAJ Lower Division Clerk", nameHi: "कुराज लोअर डिवीजन क्लर्क" }],
+    exams: [
+      { slug: "lower-division-clerk", name: "CURAJ Lower Division Clerk", nameHi: "कुराज लोअर डिवीजन क्लर्क" },
+      { slug: "office-assistant", name: "CURAJ Incubation Foundation Office Assistant", nameHi: "कुराज इन्क्यूबेशन फाउंडेशन ऑफिस असिस्टेंट" },
+      { slug: "sports-coach", name: "CURAJ Sports Coach", nameHi: "कुराज स्पोर्ट्स कोच" },
+      { slug: "jrf-project-associate", name: "CURAJ JRF / Project Associate-I", nameHi: "कुराज जेआरएफ / प्रोजेक्ट एसोसिएट-I" },
+    ],
   },
+  {
+    slug: "iiit-kota",
+    name: "IIIT Kota",
+    nameHi: "आईआईआईटी कोटा",
+    sites: ["rj"],
+    exams: [
+      { slug: "security-supervisor", name: "IIIT Kota Security Supervisor", nameHi: "आईआईआईटी कोटा सिक्योरिटी सुपरवाइज़र" },
+    ],
+  },
+  {
+    slug: "rrc-nwr",
+    name: "RRC North Western Railway",
+    nameHi: "आरआरसी उत्तर पश्चिम रेलवे",
+    sites: ["rj"],
+    exams: [
+      { slug: "act-apprentice", name: "RRC NWR Act Apprentice", nameHi: "आरआरसी एनडब्ल्यूआर एक्ट अप्रेंटिस" },
+    ],
+  },
+  {
+    slug: "pm-shri-kv-ajmer",
+    name: "PM SHRI Kendriya Vidyalaya No. 1 Ajmer",
+    nameHi: "पीएम श्री केंद्रीय विद्यालय नं. 1 अजमेर",
+    sites: ["rj"],
+    exams: [
+      { slug: "teacher", name: "PM SHRI KV Ajmer TGT / Primary Teacher", nameHi: "पीएम श्री केवी अजमेर टीजीटी / प्राथमिक शिक्षक" },
+    ],
+  },
+  {
+    slug: "esic-rajasthan",
+    name: "ESIC Rajasthan",
+    nameHi: "ईएसआईसी राजस्थान",
+    sites: ["rj"],
+    exams: [
+      { slug: "junior-engineer", name: "ESIC Rajasthan Junior / Assistant Engineer (Retired)", nameHi: "ईएसआईसी राजस्थान जूनियर / असिस्टेंट इंजीनियर (सेवानिवृत्त)" },
+    ],
+  },
+  {
+    slug: "rites",
+    name: "RITES",
+    nameHi: "राइट्स",
+    sites: ["rj"],
+    exams: [
+      { slug: "assistant-manager", name: "RITES Assistant Manager / Manager", nameHi: "राइट्स असिस्टेंट मैनेजर / मैनेजर" },
+    ],
+  },
+  {
+    slug: "aiims-jodhpur",
+    name: "AIIMS Jodhpur",
+    nameHi: "एम्स जोधपुर",
+    sites: ["rj"],
+    exams: [
+      { slug: "project-nurse", name: "AIIMS Jodhpur Project Nurse III", nameHi: "एम्स जोधपुर प्रोजेक्ट नर्स III" },
+      { slug: "research-scientist", name: "AIIMS Jodhpur Research Assistant / Scientist", nameHi: "एम्स जोधपुर रिसर्च असिस्टेंट / साइंटिस्ट" },
+      { slug: "field-investigator", name: "AIIMS Jodhpur Field Investigator", nameHi: "एम्स जोधपुर फील्ड इन्वेस्टिगेटर" },
+    ],
+  },
+  {
+    slug: "mlsu",
+    name: "Mohanlal Sukhadia University",
+    nameHi: "मोहनलाल सुखाड़िया विश्वविद्यालय",
+    sites: ["rj"],
+    exams: [
+      { slug: "project-associate", name: "MLSU Project Associate / Project Assistant", nameHi: "एमएलएसयू प्रोजेक्ट एसोसिएट / प्रोजेक्ट असिस्टेंट" },
+    ],
+  },
+  {
+    slug: "university-of-rajasthan",
+    name: "University of Rajasthan",
+    nameHi: "राजस्थान विश्वविद्यालय",
+    sites: ["rj"],
+    exams: [
+      { slug: "project-assistant", name: "University of Rajasthan Post Doctoral Fellow / Project Assistant", nameHi: "राजस्थान विश्वविद्यालय पोस्ट डॉक्टरल फेलो / प्रोजेक्ट असिस्टेंट" },
+    ],
+  },
+  {
+    slug: "cbi-suaps",
+    name: "CBI-SUAPS",
+    nameHi: "सीबीआई-एसयूएपीएस",
+    sites: ["rj"],
+    exams: [
+      { slug: "office-assistant", name: "CBI-SUAPS Office Assistant", nameHi: "सीबीआई-एसयूएपीएस ऑफिस असिस्टेंट" },
+    ],
+  },
+  {
+    slug: "hll",
+    name: "HLL",
+    nameHi: "एचएलएल",
+    sites: ["rj"],
+    exams: [
+      { slug: "operations-manager", name: "HLL Operations Manager (Biomedical)", nameHi: "एचएलएल ऑपरेशंस मैनेजर (बायोमेडिकल)" },
+    ],
+  },
+  {
+    slug: "iit-jodhpur",
+    name: "IIT Jodhpur",
+    nameHi: "आईआईटी जोधपुर",
+    sites: ["rj"],
+    exams: [
+      { slug: "registrar", name: "IIT Jodhpur Registrar", nameHi: "आईआईटी जोधपुर रजिस्ट्रार" },
+    ],
+  },
+  {
+    slug: "iim-udaipur",
+    name: "IIM Udaipur",
+    nameHi: "आईआईएम उदयपुर",
+    sites: ["rj"],
+    exams: [
+      { slug: "senior-associate-programs", name: "IIM Udaipur Senior Associate, Programs", nameHi: "आईआईएम उदयपुर सीनियर एसोसिएट, प्रोग्राम्स" },
+    ],
+  },
+  {
+    slug: "icar-cazri",
+    name: "ICAR-CAZRI",
+    nameHi: "आईसीएआर-काज़्री",
+    sites: ["rj"],
+    exams: [
+      { slug: "young-professional", name: "ICAR CAZRI Young Professional-I / Field Attendant", nameHi: "आईसीएआर काज़्री यंग प्रोफेशनल-I / फील्ड अटेंडेंट" },
+    ],
+  },
+  {
+    slug: "oil-india",
+    name: "Oil India Limited",
+    nameHi: "ऑयल इंडिया लिमिटेड",
+    sites: ["rj"],
+    exams: [
+      { slug: "electrical-consultant", name: "Oil India Consultant (Electrical Engineering)", nameHi: "ऑयल इंडिया कंसल्टेंट (इलेक्ट्रिकल इंजीनियरिंग)" },
+    ],
+  },
+
   // National defence entries that many Himachal aspirants sit; not Himachal recruitments.
   {
     slug: "upsc",

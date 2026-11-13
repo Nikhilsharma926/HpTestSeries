@@ -3,7 +3,8 @@
 // sell; switch it on in /admin/products. Adding a new test = adding it to prisma/hr-exams/index.ts.
 
 import type { PrismaClient } from "../src/generated/prisma/client";
-import { HR_EXAM_TESTS } from "./hr-exams";
+import { HR_EXAM_TESTS, HR_MORE_TESTS } from "./hr-exams";
+import { HR_MORE_SPECS } from "./hr-exams/more";
 import { seedSeries, type SeriesSeed } from "./seed-series";
 
 const VALIDITY_DAYS = 180;
@@ -67,6 +68,15 @@ const CONFIGS: Cfg[] = [
     description: "Mocks for the English, computer and general-awareness knowledge behind the Haryana District Court Stenographer Grade III skill tests.",
     tests: HR_EXAM_TESTS.courtSteno,
   },
+  ...HR_MORE_SPECS.map((s) => ({
+    key: `${s.bodySlug}-${s.examSlug}`,
+    bodySlug: s.bodySlug,
+    examSlug: s.examSlug,
+    name: s.name,
+    nameHi: s.nameHi,
+    description: `A free general-aptitude mock for the ${s.name} recruitment: reasoning, maths, English and ${s.includeComputer ? "computer" : "general awareness"}.`,
+    tests: [HR_MORE_TESTS[`${s.bodySlug}/${s.examSlug}`]],
+  })),
 ];
 
 export async function seedHrExams(db: PrismaClient) {

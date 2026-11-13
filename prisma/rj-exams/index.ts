@@ -9,112 +9,12 @@
 // Punjab or Haryana, and current-affairs questions (which go out of date), are left out. A mock claims each question once, so
 // the three tests never repeat a question between them.
 
-import { EXAM_SERIES } from "../exam-series";
-import { HPAS_MOCKS } from "../hpas-series";
-import { CET_TESTS } from "../hr-cet";
-import { PATWARI_TESTS } from "../patwari";
-import { COURT_CLERK_TESTS } from "../pb-court-clerk";
-import { POLICE_PAID_TESTS } from "../pb-police";
-import { POLICE_TESTS } from "../police";
+
 import { RAJASTHAN_PATWARI_GK } from "../rajasthan/patwari-gk";
-import type { Diff, PatwariQuestion, TestDef } from "../patwari/types";
-import { questionTextHash } from "../../src/modules/content/text-hash";
+import type { TestDef } from "../patwari/types";
+import { buildJobTests } from "./jobs";
+import { GENERAL_POOL, claim, computer, english, gk, hindi, mock, quant, reasoning, topic, type Sec } from "./pool";
 
-const hash = (x: PatwariQuestion) => questionTextHash(x.en[0]);
-type Pick = (x: PatwariQuestion) => boolean;
-const subject =
-  (...subjects: string[]): Pick =>
-  (x) =>
-    subjects.includes(x.subject);
-const topic =
-  (subj: string, ...topics: string[]): Pick =>
-  (x) =>
-    x.subject === subj && topics.includes(x.topic);
-
-/** Questions that name another state, or that date quickly, do not belong in a Rajasthan mock. */
-const OTHER_STATE = /himachal|\bhp\b|shimla|punjab|haryana|chandigarh|हिमाचल|शिमला|पंजाब|हरियाणा|चंडीगढ़/i;
-/** The shared High Court is not another-state wording for a Rajasthan reader either way, so "Punjab and Haryana" is left alone. */
-const SHARED = /punjab (and|&) haryana|पंजाब एवं हरियाणा|पंजाब और हरियाणा/gi;
-const STATE_GK = /^(hp-gk|punjab-gk|haryana-gk|rajasthan-gk)$/;
-const usable = (x: PatwariQuestion) =>
-  !STATE_GK.test(x.subject) && x.topic !== "current-affairs" && !OTHER_STATE.test(`${x.en[0]} ${x.en[2]} ${x.hi[0]} ${x.hi[2]}`.replace(SHARED, ""));
-
-function dedupe(qs: PatwariQuestion[]): PatwariQuestion[] {
-  const seen = new Set<string>();
-  return qs.filter((x) => {
-    const h = hash(x);
-    if (seen.has(h)) return false;
-    seen.add(h);
-    return true;
-  });
-}
-
-/** Everything the existing series hold, minus other-state, state-GK and current-affairs questions. */
-const GENERAL_POOL = dedupe(
-  [...PATWARI_TESTS, ...POLICE_TESTS, ...COURT_CLERK_TESTS, ...POLICE_PAID_TESTS, ...CET_TESTS, ...EXAM_SERIES.flatMap((s) => s.tests)]
-    .flatMap((t) => t.questions)
-    .concat(HPAS_MOCKS.flat())
-    .filter(usable),
-);
-
-const RANK: Record<"easy" | "exam" | "hard", Record<Diff, number>> = {
-  easy: { M: 0, E: 1, H: 2 },
-  exam: { M: 0, H: 1, E: 2 },
-  hard: { H: 0, M: 1, E: 2 },
-};
-
-const claimed = new Set<string>();
-
-/** Takes `n` questions nobody has claimed yet, in difficulty order (stable by hash), and puts them in section `s`. */
-function claim(s: PatwariQuestion["s"], n: number, from: PatwariQuestion[], pick: Pick, level: keyof typeof RANK, label: string): PatwariQuestion[] {
-  const out: PatwariQuestion[] = [];
-  const order = [...from].sort((a, b) => RANK[level][a.d] - RANK[level][b.d] || (hash(a) < hash(b) ? -1 : 1));
-  for (const x of order) {
-    if (out.length === n) break;
-    if (claimed.has(hash(x)) || !pick(x)) continue;
-    claimed.add(hash(x));
-    out.push({ ...x, s });
-  }
-  if (out.length < n) throw new Error(`rj-exams: only ${out.length} of ${n} questions left for ${label}`);
-  return out;
-}
-
-const gk = topic("general-studies", "indian-history", "indian-polity", "indian-geography", "indian-economy", "general-science", "static-gk");
-const reasoning = subject("reasoning");
-const quant = subject("quant");
-const english = subject("english");
-const hindi = subject("hindi");
-const computer = subject("computer");
-
-type Sec = { name: string; nameHi: string; count: number };
-
-const mock = (
-  slug: string,
-  title: string,
-  titleHi: string,
-  minutes: number,
-  marks: { correct: number; wrong: number },
-  exam: string,
-  secs: Sec[],
-  questions: PatwariQuestion[],
-  note: string,
-): TestDef => ({
-  slug,
-  title,
-  titleHi,
-  type: "MOCK",
-  durationSec: minutes * 60,
-  isFree: true,
-  marksCorrect: marks.correct,
-  marksWrong: marks.wrong,
-  instructions:
-    `Practice paper for the ${exam}: ${questions.length} questions, ${questions.length * marks.correct} marks, ${minutes} minutes. ` +
-    `${note} Sections: ${secs.map((x) => `${x.name} ${x.count}`).join(", ")}. ` +
-    `Each correct answer gives ${marks.correct} ${marks.correct === 1 ? "mark" : "marks"} and ${marks.wrong === 0 ? "there is no negative marking" : `each wrong answer deducts ${marks.wrong} marks`}. ` +
-    "You can switch between English and Hindi at any time.",
-  sections: secs.map(({ name, nameHi }) => ({ name, nameHi })),
-  questions,
-});
 
 // ───────── RPSC Protection Officer (Paper I, General Studies) ─────────
 export const PROTECTION_OFFICER_FREE_MOCK_SLUG = "rpsc-protection-officer-free-mock-1";
@@ -198,9 +98,13 @@ export const CURAJ_LDC_FREE_TEST = mock(
   "The CURAJ notice (Advt. CURAJ/R./F.179/Rectt./2026/7314) says the university may conduct a written test, trade test, computer test or any other test, and does not give a pattern, so the subjects, length and marking here are ours and a written test is not confirmed. Typing speed (35 wpm English or 30 wpm Hindi) is an eligibility condition and is not covered.",
 );
 
-export const RJ_EXAM_TESTS = {
+// The other recruitments on the page (prisma/rj-exams/jobs.ts), built after the three above so their questions are claimed first.
+const JOB_TESTS = buildJobTests();
+
+export const RJ_EXAM_TESTS: Record<string, TestDef[]> = {
   protectionOfficer: [PROTECTION_OFFICER_FREE_TEST],
   patwari: [PATWARI_FREE_TEST],
   curaj: [CURAJ_LDC_FREE_TEST],
+  ...JOB_TESTS,
 };
 export const ALL_RJ_EXAM_TESTS: TestDef[] = Object.values(RJ_EXAM_TESTS).flat();

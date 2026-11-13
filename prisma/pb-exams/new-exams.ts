@@ -27,7 +27,9 @@ import type { Diff, PatwariQuestion, TestDef } from "../patwari/types";
 import { driverConstableMock1 } from "../upcoming-free/driver-constable";
 import { questionTextHash } from "../../src/modules/content/text-hash";
 import { PB_DRIVING_QUESTIONS } from "./driving";
-import { ALL_PB_EXAM_TESTS } from "./index";
+import { PB_DRIVING_QUESTIONS_2 } from "./driving-2";
+import { CLERK_SECTIONS, GROUP_D_SECTIONS, ALL_PB_EXAM_TESTS } from "./index";
+import { PB_PUNJAB_GK_EXTRA } from "./punjab-gk-extra";
 
 const hash = (x: PatwariQuestion) => questionTextHash(x.en[0]);
 type Pick = (x: PatwariQuestion) => boolean;
@@ -207,8 +209,105 @@ export const ETT_FREE_TEST = mock(
   "As summarised for the 2026 ETT syllabus, Paper B has 100 questions of 2 marks in 100 minutes: Punjabi 20, English 10, Hindi 10, General Science 20, Social Studies 20 and Mathematics 20; no negative marking is stated, so none is applied here. Check the pattern against the notification on erd.punjab.gov.in. Paper A, the qualifying Punjabi paper, is not covered, and the questions are school-level GK, not the exact ETT syllabus.",
 );
 
+// ───────── Second free mocks (PSSSB Group D, Clerk, Driver and Punjab ETT) ─────────
+// Same patterns as the first mocks above. They are built after the first mocks have claimed their questions, so nothing repeats
+// between a first and a second mock. The 30 fresh Punjab GK questions join the pool only now, so the first mocks stay as they were.
+POOL.push(...PB_PUNJAB_GK_EXTRA.filter((x) => !inOtherMock.has(hash(x)) && usable(x)));
+
+export const GROUP_D_FREE_MOCK_2_SLUG = "psssb-group-d-free-mock-2";
+export const CLERK_FREE_MOCK_2_SLUG = "psssb-clerk-free-mock-2";
+export const DRIVER_FREE_MOCK_2_SLUG = "psssb-driver-free-mock-2";
+export const ETT_FREE_MOCK_2_SLUG = "erb-punjab-ett-free-mock-2";
+
+// Clerk goes first because its Punjab history and culture section is the narrowest.
+const clerkQuestions2: PatwariQuestion[] = [
+  ...claim(0, 25, punjabHistory, "exam", "Clerk 2 Punjab history & culture"),
+  ...claim(1, 20, topic("general-studies", "indian-history", "indian-polity", "indian-geography", "indian-economy", "general-science", "static-gk"), "exam", "Clerk 2 General Knowledge"),
+  ...claim(2, 20, reasoning, "exam", "Clerk 2 Reasoning"),
+  ...claim(3, 15, english, "exam", "Clerk 2 English"),
+  ...claim(4, 10, punjabi, "exam", "Clerk 2 Punjabi"),
+  ...claim(5, 10, computer, "exam", "Clerk 2 ICT"),
+];
+export const CLERK_FREE_TEST_2 = mock(
+  CLERK_FREE_MOCK_2_SLUG,
+  "PSSSB Clerk Free Mock Test 2",
+  "पीएसएसएसबी क्लर्क फ़्री मॉक टेस्ट 2",
+  100,
+  1,
+  0.25,
+  "PSSSB Clerk written exam (Part B)",
+  CLERK_SECTIONS,
+  clerkQuestions2,
+  "Part B of the 2026 Clerk paper covers general knowledge, Punjab history and culture, reasoning, Punjabi, English and ICT with a quarter-mark negative; the exact split is ours. Part A, the qualifying Punjabi paper, is not covered in this test.",
+);
+
+const groupDQuestions2: PatwariQuestion[] = [
+  ...claim(0, 25, subject("punjab-gk"), "easy", "Group D 2 Punjab GK"),
+  ...claim(1, 25, topic("general-studies", "indian-history", "indian-polity", "indian-geography", "indian-economy", "general-science", "static-gk"), "easy", "Group D 2 General Knowledge"),
+  ...claim(2, 20, reasoning, "easy", "Group D 2 Reasoning"),
+  ...claim(3, 20, quant, "easy", "Group D 2 Maths"),
+  ...claim(4, 10, english, "easy", "Group D 2 English"),
+];
+export const GROUP_D_FREE_TEST_2 = mock(
+  GROUP_D_FREE_MOCK_2_SLUG,
+  "PSSSB Group D Free Mock Test 2",
+  "पीएसएसएसबी ग्रुप डी फ़्री मॉक टेस्ट 2",
+  100,
+  1,
+  0.25,
+  "PSSSB Group D written exam (Part B)",
+  GROUP_D_SECTIONS,
+  groupDQuestions2,
+  "The 2026 Group D test has a qualifying Punjabi paper and a 100-mark merit paper on general knowledge, Punjab GK, reasoning, maths and English with a quarter-mark negative; the split between those subjects is ours. The qualifying Punjabi paper is not covered in this test.",
+);
+
+const driverQuestions2: PatwariQuestion[] = [
+  ...claim(0, 5, gk, "easy", "Driver 2 General Knowledge"),
+  ...claim(1, 3, punjabHistory, "easy", "Driver 2 Punjab history"),
+  ...claim(2, 5, reasoning, "easy", "Driver 2 Reasoning"),
+  ...claim(3, 3, punjabi, "easy", "Driver 2 Punjabi"),
+  ...claim(3, 2, english, "easy", "Driver 2 English"),
+  ...claim(3, 2, computer, "easy", "Driver 2 ICT"),
+  ...PB_DRIVING_QUESTIONS_2.map((x) => ({ ...x, s: 4 as const })),
+];
+export const DRIVER_FREE_TEST_2 = mock(
+  DRIVER_FREE_MOCK_2_SLUG,
+  "PSSSB Driver Free Mock Test 2",
+  "पीएसएसएसबी ड्राइवर फ़्री मॉक टेस्ट 2",
+  60,
+  1,
+  0.25,
+  "PSSSB Driver written exam (Part B)",
+  DRIVER_SECTIONS,
+  driverQuestions2,
+  "As summarised from the exam plan for Advt. No. 12 of 2026, Part B has 100 questions: 40 general (GK, Punjab history and culture, reasoning, Punjabi, English, ICT) and 60 on driving technique and motor car mechanism, with a quarter-mark negative. This free mock is half that length in the same proportions, so check the split against the official plan on sssb.punjab.gov.in. The qualifying Punjabi paper (Part A) is not covered.",
+);
+
+const ettQuestions2: PatwariQuestion[] = [
+  ...claim(0, 20, punjabi, "easy", "ETT 2 Punjabi"),
+  ...claim(1, 10, english, "easy", "ETT 2 English"),
+  ...claim(2, 10, hindi, "easy", "ETT 2 Hindi"),
+  ...claim(3, 20, science, "easy", "ETT 2 General Science"),
+  ...claim(4, 20, socialStudies, "easy", "ETT 2 Social Studies"),
+  ...claim(5, 20, quant, "easy", "ETT 2 Mathematics"),
+];
+export const ETT_FREE_TEST_2 = mock(
+  ETT_FREE_MOCK_2_SLUG,
+  "Punjab ETT Free Mock Test 2 (Paper B)",
+  "पंजाब ईटीटी फ़्री मॉक टेस्ट 2 (पेपर बी)",
+  100,
+  2,
+  0,
+  "Punjab ETT written exam (Paper B)",
+  ETT_SECTIONS,
+  ettQuestions2,
+  "As summarised for the 2026 ETT syllabus, Paper B has 100 questions of 2 marks in 100 minutes: Punjabi 20, English 10, Hindi 10, General Science 20, Social Studies 20 and Mathematics 20; no negative marking is stated, so none is applied here. Check the pattern against the notification on erd.punjab.gov.in. Paper A, the qualifying Punjabi paper, is not covered, and the questions are school-level GK, not the exact ETT syllabus.",
+);
+
 export const PB_NEW_EXAM_TESTS = {
-  driver: [DRIVER_FREE_TEST],
-  ett: [ETT_FREE_TEST],
+  groupD: [GROUP_D_FREE_TEST_2],
+  clerk: [CLERK_FREE_TEST_2],
+  driver: [DRIVER_FREE_TEST, DRIVER_FREE_TEST_2],
+  ett: [ETT_FREE_TEST, ETT_FREE_TEST_2],
 };
 export const ALL_PB_NEW_EXAM_TESTS: TestDef[] = Object.values(PB_NEW_EXAM_TESTS).flat();

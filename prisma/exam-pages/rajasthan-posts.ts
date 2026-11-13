@@ -1,4 +1,5 @@
 import { rj } from "../../src/sites/rj";
+import { RAJASTHAN_JOB_POSTS } from "./rajasthan-jobs-posts";
 import type { PostSeed } from "./types";
 
 const FREE_MOCK = `/tests/${rj.freeMockSlug}`;
@@ -6,7 +7,7 @@ const FREE_MOCK = `/tests/${rj.freeMockSlug}`;
 // rjtestseries.in posts for the Rajasthan exams coming up from November 2026 to February 2027. Dates are from RSSB's
 // revised calendar of 28 September 2026 and RPSC's schedule of October 2026, checked by the owner on 26 October 2026.
 
-export const RAJASTHAN_POSTS: PostSeed[] = [
+const MAIN_POSTS: PostSeed[] = [
   {
     slug: "rssb-exam-calendar-2026-revised-november-february",
     site: "rj",
@@ -413,6 +414,8 @@ See the full [Teaching Associate syllabus](/rssb/teaching-associate/syllabus), a
 
 The facts below are from job-alert summaries. Always confirm the post, the last date and the fee on the official notice before you apply.
 
+**Free mocks:** almost every post below has a free practice mock on rjtestseries.in. Because most notices publish no paper, those mocks are general practice, not the real exam. See the [complete list of mocks and exam pages](/blog/rajasthan-govt-jobs-free-mock-tests-list-all-exams-2026), or the guides for [CURAJ](/blog/curaj-recruitment-november-2026-ldc-office-assistant-sports-coach-jrf), [AIIMS Jodhpur](/blog/aiims-jodhpur-recruitment-november-2026-nurse-scientist-research-assistant-field-investigator), [universities and institutes](/blog/rajasthan-university-institute-jobs-november-2026-mlsu-iit-jodhpur-iim-udaipur-cazri), [RITES, HLL and Oil India](/blog/rites-hll-oil-india-rajasthan-jobs-november-2026-manager-consultant-posts), [IIIT Kota](/blog/iiit-kota-security-supervisor-recruitment-2026-retired-defence-personnel), [KV Ajmer](/blog/pm-shri-kv-ajmer-walk-in-17-november-2026-tgt-english-primary-teacher) and [ESIC Rajasthan](/blog/esic-rajasthan-junior-engineer-assistant-engineer-retired-recruitment-2026).
+
 ## Posts where a written test is possible
 
 | Organisation | Post | Vacancies | Last date | Written test? |
@@ -752,3 +755,6 @@ Looking for jobs that do have an exam? See the [Rajasthan government jobs list f
     ],
   },
 ];
+
+/** The exam and date posts above plus the per-organisation job posts (rajasthan-jobs-posts.ts). */
+export const RAJASTHAN_POSTS: PostSeed[] = [...MAIN_POSTS, ...RAJASTHAN_JOB_POSTS];

@@ -641,4 +641,25 @@ export const taxonomy: SubjectSeed[] = [
       ["sports-history-awards", "Olympics, Sports History & Awards"],
     ],
   },
+  {
+    slug: "music",
+    name: "Music",
+    nameHi: "संगीत",
+    topics: [
+      ["theory-ragas", "Swara, Raga & Theory"],
+      ["taal-laya", "Taal & Laya"],
+      ["instruments", "Musical Instruments"],
+      ["history-personalities", "Music History & Personalities"],
+    ],
+  },
+  {
+    slug: "fine-arts",
+    name: "Fine Arts",
+    nameHi: "ललित कला",
+    topics: [
+      ["indian-art-history", "History of Indian Art"],
+      ["painting-schools", "Painting Schools & Artists"],
+      ["techniques-materials", "Techniques, Colour & Materials"],
+    ],
+  },
 ];

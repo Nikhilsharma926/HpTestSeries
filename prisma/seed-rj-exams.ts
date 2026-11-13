@@ -1,9 +1,10 @@
 // Free mocks and hidden series for the Rajasthan exams added on 13 November 2026 (RPSC Protection Officer, RSSB Patwari,
-// CURAJ Lower Division Clerk) on rjtestseries.in. Each product is created hidden until there are paid mocks to sell; switch
+// CURAJ Lower Division Clerk and the 19 other recruitments in prisma/rj-exams/jobs.ts) on rjtestseries.in. Each product is created hidden until there are paid mocks to sell; switch
 // it on in /admin/products. Adding a new test = adding it to prisma/rj-exams/index.ts.
 
 import type { PrismaClient } from "../src/generated/prisma/client";
 import { RJ_EXAM_TESTS } from "./rj-exams";
+import { RJ_JOBS, jobSlugKey } from "./rj-exams/jobs";
 import { seedSeries, type SeriesSeed } from "./seed-series";
 
 const VALIDITY_DAYS = 180;
@@ -39,6 +40,16 @@ const CONFIGS: Cfg[] = [
     description: "Mocks for the Central University of Rajasthan Lower Division Clerk recruitment: General Awareness, Reasoning, Maths, English and Computer.",
     tests: RJ_EXAM_TESTS.curaj,
   },
+  // The other recruitments on the page: one practice series each, from prisma/rj-exams/jobs.ts.
+  ...RJ_JOBS.map((j) => ({
+    key: jobSlugKey(j),
+    bodySlug: j.body.slug,
+    examSlug: j.exam.slug,
+    name: j.exam.name,
+    nameHi: j.exam.nameHi,
+    description: `Practice mocks for the ${j.exam.name} recruitment (${j.snippet}). The notice publishes no paper pattern, so the subjects and marking are ours.`,
+    tests: RJ_EXAM_TESTS[jobSlugKey(j)],
+  })),
 ];
 
 export async function seedRjExams(db: PrismaClient) {

@@ -1,4 +1,5 @@
 import { rj } from "../../src/sites/rj";
+import { RJ_JOBS, jobKey, jobPage } from "../rj-exams/jobs";
 import type { ExamPages } from "./types";
 
 const FREE_MOCK = `/tests/${rj.freeMockSlug}`;
@@ -370,4 +371,7 @@ You need **any bachelor's degree** and a typing speed of **35 words per minute i
       },
     ],
   },
+
+  // The other recruitments on FreeJobAlert's Rajasthan page, one practice page each (prisma/rj-exams/jobs.ts).
+  ...Object.fromEntries(RJ_JOBS.map((j) => [jobKey(j), jobPage(j)])),
 };
