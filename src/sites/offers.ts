@@ -18,7 +18,6 @@ export type Offer = {
   examDate: string;
   examLabel: string;
   title: string;
-  titleHi: string;
 };
 
 export const OFFERS: Offer[] = [
@@ -32,7 +31,6 @@ export const OFFERS: Offer[] = [
     examDate: "2026-11-23T00:00:00+05:30",
     examLabel: "HP Patwari exam",
     title: "Patwari exam starts 23 November",
-    titleHi: "पटवारी परीक्षा 23 नवंबर से",
   },
 ];
 

@@ -17,6 +17,7 @@ import { jbtPedagogy } from "./fresh/jbt-pedagogy";
 import { law } from "./fresh/law";
 import { libraryScience } from "./fresh/library-science";
 import { linemanMock1 } from "./fresh/lineman-1";
+import { naibTehsildarMock1, naibTehsildarMock2 } from "./fresh/naib-tehsildar";
 import { linemanMock2 } from "./fresh/lineman-2";
 import { linemanMock3, linemanMock4 } from "./fresh/lineman-3";
 import { nursingCommunity, nursingFundamentals, nursingMedSurg } from "./fresh/nursing";
@@ -114,6 +115,14 @@ const S = (name: string, nameHi: string, ...parts: Part[]): Section => ({
   parts,
 });
 const from = (n: number, pick: Pick): Part => ({ n, pick });
+
+const NAIB_TEHSILDAR_SECTIONS: Section[] = [
+  S("Himachal GK & Revenue", "हिमाचल सामान्य ज्ञान एवं राजस्व", [naibTehsildarMock1, naibTehsildarMock2].map((m) => m.hpGk)),
+  S("General Studies", "सामान्य अध्ययन", [naibTehsildarMock1, naibTehsildarMock2].map((m) => m.gs)),
+  S("Reasoning", "तर्कशक्ति", from(6, reasoning)),
+  S("Mathematics", "गणित", from(6, maths)),
+  S("English & Hindi", "अंग्रेज़ी एवं हिंदी", [naibTehsildarMock1, naibTehsildarMock2].map((m) => m.english), from(5, hindi)),
+];
 
 const EXAMS: ExamDef[] = [
   // Written wholly fresh in prisma/hprca-clerk on the 2026 pattern (120 questions, 90 minutes, no maths): mocks 1–2 go
@@ -634,6 +643,24 @@ const EXAMS: ExamDef[] = [
         }),
       ],
     },
+  },
+  // HPPSC Naib Tehsildar: Himachal GK & revenue and General Studies are written fresh in ./fresh/naib-tehsildar (the bank has
+  // no Himachal GK or GS to spare); reasoning, maths and the languages come from the bank. Kept last so earlier picks stay put.
+  {
+    bodySlug: "hppsc",
+    examSlug: "naib-tehsildar",
+    slug: "hppsc-naib-tehsildar",
+    // Both mocks are "late" ones so the bank picks (reasoning, maths, languages) happen after every earlier exam has picked.
+    mocks: 0,
+    name: "HPPSC Naib Tehsildar",
+    nameHi: "एचपीपीएससी नायब तहसीलदार",
+    minutes: 90,
+    price: 99,
+    description:
+      "Full-length HPPSC Naib Tehsildar mock tests: Himachal GK with revenue terms and land laws, general studies, reasoning, " +
+      "maths, English and Hindi.",
+    sections: NAIB_TEHSILDAR_SECTIONS,
+    lateMocks: { count: 2, sections: NAIB_TEHSILDAR_SECTIONS },
   },
 ];
 

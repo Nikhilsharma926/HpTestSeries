@@ -85,19 +85,14 @@ export function OfferPopup() {
         </button>
 
         <p className="inline-flex items-center gap-1.5 rounded-full bg-accent-soft px-3 py-1 text-xs font-semibold text-accent-ink">
-          <Clock className="size-3.5" aria-hidden /> {examLeft.days > 0 ? `${examLeft.days} din baaki` : "Exam bahut paas"}
+          <Clock className="size-3.5" aria-hidden /> {examLeft.days > 0 ? `${examLeft.days} ${examLeft.days === 1 ? "day" : "days"} left` : "Exam is very close"}
         </p>
-        <div>
-          <h2 id="offer-title" className="text-xl font-bold leading-tight">
-            {offer.title}
-          </h2>
-          <p lang="hi" className="mt-0.5 text-sm text-muted">
-            {offer.titleHi}
-          </p>
-        </div>
+        <h2 id="offer-title" className="text-xl font-bold leading-tight">
+          {offer.title}
+        </h2>
 
         <p className="text-sm text-muted">
-          7 full mocks + 14 subject tests, har sawaal ka solution Hindi aur English me. Last-minute practice ke liye abhi sabse sahi time.
+          7 full mocks + 14 subject tests, with a solution for every question in both Hindi and English. This is the best time for last-minute practice.
         </p>
 
         <div className="flex items-end gap-3">
@@ -108,7 +103,7 @@ export function OfferPopup() {
 
         <p className="flex items-center gap-1.5 text-sm font-medium text-foreground">
           <Tag className="size-4 text-accent-strong" aria-hidden />
-          Code <b className="rounded bg-primary-soft px-1.5 py-0.5 tracking-wide text-primary-strong">{offer.couponCode}</b> khud lag jayega
+          Code <b className="rounded bg-primary-soft px-1.5 py-0.5 tracking-wide text-primary-strong">{offer.couponCode}</b> will be applied automatically
         </p>
 
         <Link
@@ -116,10 +111,10 @@ export function OfferPopup() {
           onClick={() => track("offer_popup_click", { offer: offer.productSlug })}
           className={btn("primary", "lg", "w-full justify-center")}
         >
-          Offer lo, ₹{offer.price} me
+          Get the offer for ₹{offer.price}
         </Link>
         <p className="text-center text-xs text-muted">
-          Offer {left.days > 0 ? `${left.days} din ${left.hours} ghante` : `${left.hours} ghante ${left.minutes} minute`} me khatam. Ek baar ka payment, koi subscription nahi.
+          Offer ends in {left.days > 0 ? `${left.days} ${left.days === 1 ? "day" : "days"} ${left.hours} ${left.hours === 1 ? "hour" : "hours"}` : `${left.hours} ${left.hours === 1 ? "hour" : "hours"} ${left.minutes} ${left.minutes === 1 ? "minute" : "minutes"}`}. One-time payment, no subscription.
         </p>
       </div>
     </div>

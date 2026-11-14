@@ -232,7 +232,7 @@ Himachal me **hill road** ke signs (sharp curve, falling rocks, hairpin bend) ko
 
 Constable subjects, yaani [Himachal GK](/himachal), reasoning aur maths, roz ek ghanta. Driving test aur physical test ki practice written ke saath chalate raho.
 
-Free mock: [Driver Constable mock](${free("hp-police-driver-constable-free-mock-1")}). Exam pages: [Driver Constable](/hp-police/driver-constable) aur [Constable](/hp-police/constable). Physical test ki planning ke liye [HP Police physical test preparation plan](/blog/hp-police-physical-test-preparation-plan-running-long-jump-shot-put) dekhein.`,
+Free mock: [Driver Constable mock](${free("hp-police-driver-constable-free-mock-1")}). Exam pages: [Driver Constable](/hp-police/driver-constable) aur [Constable](/hp-police/constable). Physical test ki planning ke liye [HP Police physical test preparation plan](/blog/hp-police-physical-test-preparation-plan-running-fitness) dekhein.`,
     faqs: [
       { q: "Driver Constable paper me kya extra aata hai?", a: "Constable ke subjects ke saath road signs, Motor Vehicles Act, engine ke parts aur basic maintenance. Written ke baad driving aur physical test bhi hote hain." },
       { q: "What are the three groups of road signs?", a: "Mandatory (regulatory), cautionary (warning) and informatory signs." },

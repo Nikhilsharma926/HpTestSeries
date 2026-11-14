@@ -3,6 +3,7 @@ import { HP_GAP_POSTS } from "./hp-gap-posts";
 import { HP_NOV13_POSTS } from "./hp-nov13-posts";
 import { HP_ALL_EXAMS_POSTS } from "./hp-all-exams-posts";
 import { HP_EXAM_GUIDES_POSTS } from "./hp-exam-guides-posts";
+import { HP_GK_POSTS } from "./hp-gk-posts";
 
 // Blog posts for the exams added after the first catalogue (Naib Tehsildar, HP SET, Lab Assistant, Anganwadi Supervisor,
 // KCCB / JCCB Clerk, Head Constable, Driver Constable), plus the HP Police 2026 drive, HPRCA Clerk 2026, HP current
@@ -17,6 +18,7 @@ export const HP_MORE_POSTS: PostSeed[] = [
   ...HP_NOV13_POSTS,
   ...HP_ALL_EXAMS_POSTS,
   ...HP_EXAM_GUIDES_POSTS,
+  ...HP_GK_POSTS,
   {
     slug: "hp-naib-tehsildar-recruitment-2026-status-eligibility-syllabus",
     seoTitle: "HP Naib Tehsildar Recruitment 2026: Status, Syllabus, Prep",
