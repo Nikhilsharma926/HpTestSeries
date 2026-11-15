@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { reportClientErrorAction } from "./report-error-action";
 
-// Catches errors thrown by the root layout itself, so it must render its own <html>/<body>.
+// nikhil Catches errors thrown by the root layout itself, so it must render its own <html>/<body>.
 export default function GlobalError({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
   useEffect(() => {
     void reportClientErrorAction(error.message, error.stack, window.location.pathname).catch(() => {});
